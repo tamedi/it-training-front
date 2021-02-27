@@ -1,0 +1,39 @@
+.p-fluid {
+    padding: 10px;
+    width: 25%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid grey;
+    align-items: center;
+}
+
+.p-field {
+    padding: 5px;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.p-field label {
+    margin:0;
+    display: inline-block;
+    width: 40%;
+}
+
+.p-field input {
+    display: inline-block;
+    width: 60%;
+}
+
+.p-fluid button {
+    width: 30%;
+    height: 20px;
+    margin: 20px auto;
+    padding: 15px;
+    line-height: 5px;
+    vertical-align: middle;
+    background-color: #3CD014;
+    color: beige;
+}

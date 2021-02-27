@@ -9,6 +9,7 @@ import { AdministrateurLoginFormComponent } from './features/administrateur-logi
 import { AdministrateurCreationAdminFormComponent } from './features/administrateur-creation-admin-form/administrateur-creation-admin-form.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
+import { FooterComponent } from './commons/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoginComponent } from './pages/login/login.component';
     AdministrateurLoginFormComponent,
     AdministrateurCreationAdminFormComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

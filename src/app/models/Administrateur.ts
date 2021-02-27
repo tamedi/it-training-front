@@ -9,6 +9,7 @@ export class Administrateur {
         private _password:string
     ){}
 
+    get id() { return this._id }
     get nom() { return this._nom }
     get prenom() { return this._prenom }
     get email() { return this._email }
