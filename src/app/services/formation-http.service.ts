@@ -13,4 +13,7 @@ export class FormationHttpService {
   getFormationList(){
     return this.httpClient.get<Formation[]>(this.baseUrl)
   }
+  findById(id:number){
+    return this.httpClient.get<Formation>(`http://localhost:9191/formations/${id}`)
+  }
 }

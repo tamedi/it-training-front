@@ -14,6 +14,9 @@ import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
+import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     CardComponent,
     ListeComponent,
-    PageFormationListeComponent
+    PageFormationListeComponent,
+   
+    PageFormationByIdComponent,
+   
+    FormationByIdComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-export interface Formation {
-    id:number,
-    titre:string,
+export class Formation {
+    public id:number
+    public titre:string
 }

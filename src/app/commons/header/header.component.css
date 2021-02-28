@@ -10,12 +10,12 @@
 
 }
 .logo{
-    color: #069370;
+    color: #fc9804;
     height: 60px;
     font-size: 36px;
     line-height: 60px;
     padding: 0 20px;
-    background: #ccc;
+    background: rgb(3, 165, 130);
     text-align: center;
     box-sizing: border-box;
     float: left;
