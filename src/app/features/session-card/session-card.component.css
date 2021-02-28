@@ -1,0 +1,55 @@
+.session-card {
+    margin: 20px;
+    background-color: #EAEAEA;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    font-size: 100%;
+    font: inherit;
+}
+
+.session-card p,
+a {
+    margin: 7%;
+}
+
+.session-card p {
+    border-bottom-style: inset;
+    border-bottom-color: #CACCCD;
+    border-bottom-width: 1px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    font-family: Ubuntu, sans-serif;
+}
+
+.session-card-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.session-card-links a {
+    text-decoration: none;
+}
+
+.lien-test {
+    color: #EA690B;
+    width: 80%;
+    text-align: center;
+    border-bottom-style: inset;
+    border-bottom-color: #CACCCD;
+    border-bottom-width: 1px;
+    padding-bottom: 5px;
+}
+
+.lien-inscription {
+    background-color: #0088BA;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
