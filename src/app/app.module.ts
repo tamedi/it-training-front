@@ -5,27 +5,60 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+<<<<<<< HEAD
 import { AdministrateurLoginFormComponent } from './features/administrateur-login-form/administrateur-login-form.component';
 import { AdministrateurCreationAdminFormComponent } from './features/administrateur-creation-admin-form/administrateur-creation-admin-form.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './commons/footer/footer.component';
+=======
+import { HeaderComponent } from './commons/header/header.component';
+import { FooterComponent } from './commons/footer/footer.component';
+import { CardComponent } from './features/formations/card/card.component';
+import { ListeComponent } from './features/formations/liste/liste.component';
+import { PageFormationListeComponent } from './pages/page-formation-liste/page-formation-liste.component';
+import {CardModule} from 'primeng/card';
+import {ButtonModule} from 'primeng/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
+import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
+import { ListeDesThemesComponent } from './features/themes/liste-des-themes/liste-des-themes.component';
+
+>>>>>>> dev
 
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
     AdministrateurLoginFormComponent,
     AdministrateurCreationAdminFormComponent,
     DashboardComponent,
     LoginComponent,
     FooterComponent
+=======
+    HeaderComponent,
+    FooterComponent,
+    CardComponent,
+    ListeComponent,
+    PageFormationListeComponent,
+   
+    PageFormationByIdComponent,
+   
+    FormationByIdComponent,
+   
+    ListeDesThemesComponent
+>>>>>>> dev
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CardModule,
+    ButtonModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
