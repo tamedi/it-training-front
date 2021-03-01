@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Session } from 'src/app/models/Session';
+import { SessionHttpService } from 'src/app/services/session-http.service';
 
 
 @Component({
@@ -13,7 +14,7 @@ export class SessionDateCardComponent implements OnInit {
 
 
   
-  constructor() { }
+  constructor(private sessionhttpservice:SessionHttpService) { }
 
   ngOnInit(): void {
   }

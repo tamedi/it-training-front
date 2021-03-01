@@ -2,7 +2,7 @@
     <span>{{formation.titre}}</span>
 </div> -->
 <div class="formation-card">
-    <p-card header="{{formation.titre}}"  [style]="{width: '360px'}" styleClass="p-card-shadow">
+    <p-card header="{{formation.titre}}" [style]="{width: '360px'}" styleClass="p-card-shadow">
         <ng-template pTemplate="header">
             <img alt="Card" src="assets\formation-images\ittraning.png">
         </ng-template>
@@ -12,4 +12,9 @@
             <!-- <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button> -->
         </ng-template>
     </p-card>
+</div>
+
+<div class="session-card">
+    <app-session-card></app-session-card>
+    <app-session-list-dates></app-session-list-dates>
 </div>

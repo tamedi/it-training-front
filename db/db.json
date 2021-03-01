@@ -1,19 +1,18 @@
 {
-    "session" : [
-        {
-            "id":1,
-            "date":"22 février",
-            "lieu":"Paris"
+    "session": [{
+            "id": 1,
+            "date": "22 février",
+            "lieu": "Paris"
         },
         {
-            "id":2,
-            "date":"23 février",
-            "lieu":"Paris"
+            "id": 2,
+            "date": "23 février",
+            "lieu": "Paris"
         },
         {
-            "id":3,
-            "date":"28 février",
-            "lieu":"Lille"
+            "id": 3,
+            "date": "28 février",
+            "lieu": "Lille"
         }
     ]
 }
