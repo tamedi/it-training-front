@@ -1,9 +1,9 @@
 .header{
     position: relative;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 20px auto;
     padding: 10px;
-    background:#fff;
+    background:#F7F7F7;
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba((0,0,0,.2), green, blue, alpha);

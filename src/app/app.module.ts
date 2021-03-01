@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
+import { ListeDesThemesComponent } from './features/themes/liste-des-themes/liste-des-themes.component';
 
 
 @NgModule({
@@ -29,7 +30,9 @@ import { FormationByIdComponent } from './features/formations/formation-by-id/fo
    
     PageFormationByIdComponent,
    
-    FormationByIdComponent
+    FormationByIdComponent,
+   
+    ListeDesThemesComponent
   ],
   imports: [
     BrowserModule,
