@@ -1,3 +1,31 @@
-<div class="navbar-dashboard">
-    <app-item-navigation-dashboard></app-item-navigation-dashboard>
+<div id="sidenav">
+  <div class="group-navigation">
+    <span class="material-icons"> school </span>
+    <button mat-button [matMenuTriggerFor]="menu" class="menu-item"> Formations</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Ajouter Formation</button>
+      <button mat-menu-item>Modifier Formation</button>
+      <button mat-menu-item>Supprimer Formation</button>
+    </mat-menu>
+  </div>
+
+  <div class="group-navigation">
+    <span class="material-icons"> insert_invitation </span>
+    <button mat-button [matMenuTriggerFor]="menu" class="menu-item">Sessions</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Ajouter Session</button>
+      <button mat-menu-item>Modifier Session</button>
+      <button mat-menu-item>Supprimer Session</button>
+    </mat-menu>
+  </div>
+
+  <div class="group-navigation">
+    <span class="material-icons"> people </span> 
+    <button mat-button [matMenuTriggerFor]="menu" class="menu-item">Administrateurs</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Ajouter Administrateur</button>
+      <button mat-menu-item>Modifier Administrateur</button>
+      <button mat-menu-item>Supprimer Administrateur</button>
+    </mat-menu>
+  </div>
 </div>

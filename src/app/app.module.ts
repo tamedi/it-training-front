@@ -5,15 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-<<<<<<< HEAD
 import { AdministrateurLoginFormComponent } from './features/administrateur-login-form/administrateur-login-form.component';
 import { AdministrateurCreationAdminFormComponent } from './features/administrateur-creation-admin-form/administrateur-creation-admin-form.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './commons/footer/footer.component';
-=======
 import { HeaderComponent } from './commons/header/header.component';
-import { FooterComponent } from './commons/footer/footer.component';
+import { NavigationDashboardComponent } from './commons/navigation-dashboard/navigation-dashboard.component';
 import { CardComponent } from './features/formations/card/card.component';
 import { ListeComponent } from './features/formations/liste/liste.component';
 import { PageFormationListeComponent } from './pages/page-formation-liste/page-formation-liste.component';
@@ -24,31 +22,27 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
 import { ListeDesThemesComponent } from './features/themes/liste-des-themes/liste-des-themes.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
 
->>>>>>> dev
 
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
     AdministrateurLoginFormComponent,
     AdministrateurCreationAdminFormComponent,
     DashboardComponent,
     LoginComponent,
-    FooterComponent
-=======
     HeaderComponent,
     FooterComponent,
     CardComponent,
     ListeComponent,
-    PageFormationListeComponent,
-   
-    PageFormationByIdComponent,
-   
-    FormationByIdComponent,
-   
-    ListeDesThemesComponent
->>>>>>> dev
+    PageFormationListeComponent, 
+    PageFormationByIdComponent,  
+    FormationByIdComponent,   
+    ListeDesThemesComponent,
+    NavigationDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +52,10 @@ import { ListeDesThemesComponent } from './features/themes/liste-des-themes/list
     HttpClientModule,
     CardModule,
     ButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
