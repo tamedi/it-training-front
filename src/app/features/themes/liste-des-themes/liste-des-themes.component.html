@@ -1,1 +1,10 @@
-<p>liste-des-themes works!</p>
+<div *ngFor="let result of formation.themes">
+    <p>
+        {{result.nom}}
+    </p>
+    <p>
+        {{
+            result.description
+        }}
+    </p>
+</div>

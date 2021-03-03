@@ -11,7 +11,8 @@ export class ListeDesThemesComponent implements OnInit {
 
   constructor() { }
 
-  @Input() public theme:Formation;
+  @Input() 
+  public formation:Formation;
 
   ngOnInit(): void {
   }
