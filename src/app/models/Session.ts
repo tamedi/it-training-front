@@ -1,5 +1,8 @@
 export interface Session {
     id:number
-    date:string
+    numero:number
+    date_debut:string
+    date_fin:string
+    prix:string
     lieu:string
 }

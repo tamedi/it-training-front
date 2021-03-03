@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SessionListDatesComponent } from './session-list-dates.component';
+import { ListSessionsComponent } from './list-sessions.component';
 
-describe('SessionListDatesComponent', () => {
-  let component: SessionListDatesComponent;
-  let fixture: ComponentFixture<SessionListDatesComponent>;
+describe('ListSessionsComponent', () => {
+  let component: ListSessionsComponent;
+  let fixture: ComponentFixture<ListSessionsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SessionListDatesComponent ]
+      declarations: [ ListSessionsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SessionListDatesComponent);
+    fixture = TestBed.createComponent(ListSessionsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

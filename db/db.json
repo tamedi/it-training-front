@@ -1,18 +1,26 @@
 {
-    "session": [{
+    "formation":{
+        "id": 1,
+        "titre": "Toto aime Angular",
+        "description":"",
+        "themes": [],
+        "sessions": [
+          {
             "id": 1,
-            "date": "22 février",
+            "numero": 1235498,
+            "date_debut": "25 juin 2020",
+            "date_fin": "30 juillet 2020",
+            "prix": "4055 €",
             "lieu": "Paris"
-        },
-        {
+          },
+          {
             "id": 2,
-            "date": "23 février",
-            "lieu": "Paris"
-        },
-        {
-            "id": 3,
-            "date": "28 février",
-            "lieu": "Lille"
-        }
-    ]
+            "numero": 12354987,
+            "date_debut": "22 septembre 2020",
+            "date_fin": "28 juillet 2020",
+            "prix": "4055 €",
+            "lieu": "Lyon"
+          }
+        ]
+      }
 }

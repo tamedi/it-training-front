@@ -18,28 +18,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
 import { ListeDesThemesComponent } from './features/themes/liste-des-themes/liste-des-themes.component';
-import { SessionCardComponent } from './features/session-card/session-card.component';
-import { SessionDateCardComponent } from './features/session-date-card/session-date-card.component';
-import { SessionListDatesComponent } from './features/session-list-dates/session-list-dates.component';
+import { SessionCardComponent } from './features/sessions/session-card/session-card.component';
+import { PageFormationComponent } from './pages/page-formation/page-formation.component';
+import { ListSessionsComponent } from './features/sessions/list-sessions/list-sessions.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SessionCardComponent,
-    SessionListDatesComponent,
-    SessionDateCardComponent,
     HeaderComponent,
     FooterComponent,
     CardComponent,
     ListeComponent,
     PageFormationListeComponent,
-   
     PageFormationByIdComponent,
-   
     FormationByIdComponent,
-   
-    ListeDesThemesComponent
+    ListeDesThemesComponent,
+    PageFormationComponent,
+    ListSessionsComponent
   ],
   imports: [
     BrowserModule,

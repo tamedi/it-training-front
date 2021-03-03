@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SessionDateCardComponent } from './session-date-card.component';
+import { PageFormationComponent } from './page-formation.component';
 
-describe('SessionDateCardComponent', () => {
-  let component: SessionDateCardComponent;
-  let fixture: ComponentFixture<SessionDateCardComponent>;
+describe('PageFormationComponent', () => {
+  let component: PageFormationComponent;
+  let fixture: ComponentFixture<PageFormationComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SessionDateCardComponent ]
+      declarations: [ PageFormationComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SessionDateCardComponent);
+    fixture = TestBed.createComponent(PageFormationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
