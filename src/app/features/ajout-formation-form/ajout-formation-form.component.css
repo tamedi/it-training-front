@@ -1,0 +1,11 @@
+.ajout-formation-form form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+}
+
+.ajout-formation-form form button {
+    width: 20%;
+    margin: auto;
+}

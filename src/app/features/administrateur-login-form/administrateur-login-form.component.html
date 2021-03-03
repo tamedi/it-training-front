@@ -1,12 +1,14 @@
-<div class="p-fluid">
-    <h2>Connexion administrateur</h2>
-    <div class="p-field">
-        <label for="email">Email</label>
-        <input id="email" type="text" pInputText> 
-    </div>
-    <div class="p-field">
-        <label for="password">Mot de passe</label>
-        <input id="password" type="text" pInputText> 
-    </div>
-    <button pButton type="button" label="Connexion">Connexion</button>
+<div class="login-form">
+    <form [formGroup]="loginForm" (ngSubmit)="connexion()">
+        <h1>Connexion à votre compte</h1>
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" required>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="'password'">
+          </mat-form-field>
+          <button mat-raised-button color="primary" type="submit">Connexion</button>       
+    </form>
 </div>

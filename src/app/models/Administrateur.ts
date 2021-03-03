@@ -14,6 +14,7 @@ export class Administrateur {
     get prenom() { return this._prenom }
     get email() { return this._email }
     get telepohone() { return this._telephone }
+    get password() { return this._password }
 
     set id(id:number) { this._id = id }
     set nom(nom:string) { this._nom = nom }

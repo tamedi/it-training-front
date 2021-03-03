@@ -1,11 +1,23 @@
-<div class="p-fluid">
-    <div class="p-field">
-        <label for="firstname1">Titre formation</label>
-        <input id="firstname1" type="text" pInputText> 
-    </div>
-    <div class="p-field">
-        <label for="lastname1">Thème</label>
-        <input id="lastname1" type="text" pInputText> 
-    </div>
-    <button>Enregistrer</button>
+<div class="ajout-formation-form">
+  <form [formGroup]="formationForm" (ngSubmit)="onSubmit()">
+    <h1>Nouvelle formation</h1>
+
+      <mat-form-field appearance="legacy">
+        <mat-label>Titre de la formation</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="titre">
+      </mat-form-field>
+
+      <mat-form-field appearance="legacy">
+        <mat-label>Prix</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="prix">
+      </mat-form-field>
+
+      <mat-form-field appearance="legacy">
+        <mat-label>Nombre de participants</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="nombreParticipants">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">Enregistrer</button>
+  </form>
 </div>
+

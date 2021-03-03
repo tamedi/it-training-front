@@ -16,5 +16,9 @@
     border: none;
     font-weight: bold;
     font-size: 20px;
-    margin-left: 10px;
+}
+
+.group-navigation button {
+   line-height: 0px; 
+   padding: 0 5px;
 }

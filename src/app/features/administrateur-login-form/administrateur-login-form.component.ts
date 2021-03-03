@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-administrateur-login-form',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdministrateurLoginFormComponent implements OnInit {
 
-  constructor() { }
+  loginForm: FormGroup;
+  
+  constructor(private fb: FormBuilder) {
+    this.loginForm = this.fb.group({
+      email: [''],
+      password: ['']
+    });
+   }
 
   ngOnInit(): void {
+  }
+
+  connexion(): void {
+    console.log(this.loginForm.value);
   }
 
 }

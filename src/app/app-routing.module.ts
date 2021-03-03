@@ -9,6 +9,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
 import { PageFormationListeComponent } from './pages/page-formation-liste/page-formation-liste.component';
+import { UpdateFormationComponent } from './pages/update-formation/update-formation.component';
 
 const routes: Routes = [
   {path:"", component:AppComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path:"dashboard", component:DashboardComponent,
     data:{header:false},
     children: [
-      {path: "ajoutFormation",component:AjoutFormationFormComponent}
+      {path: "ajoutFormation",component:AjoutFormationFormComponent},
+      {path: "modifierFormation", component:UpdateFormationComponent}
   ]}
   
 ];

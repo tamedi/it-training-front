@@ -1,18 +1,20 @@
 <div id="sidenav">
   <div class="group-navigation">
     <span class="material-icons"> school </span>
-    <button mat-button [matMenuTriggerFor]="menu" class="menu-item"> Formations</button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>Ajouter Formation</button>
-      <button mat-menu-item>Modifier Formation</button>
+    <button mat-button [matMenuTriggerFor]="formations" class="menu-item"> Formations</button>
+    <mat-menu #formations="matMenu">
+      <button mat-menu-item>Liste des formations</button>
+      <button mat-menu-item [routerLink]="'ajoutFormation'">Ajouter Formation</button>
+      <button mat-menu-item [routerLink]="'modifierFormation'">Modifier Formation</button>
       <button mat-menu-item>Supprimer Formation</button>
     </mat-menu>
   </div>
 
   <div class="group-navigation">
     <span class="material-icons"> insert_invitation </span>
-    <button mat-button [matMenuTriggerFor]="menu" class="menu-item">Sessions</button>
-    <mat-menu #menu="matMenu">
+    <button mat-button [matMenuTriggerFor]="sessions" class="menu-item">Sessions</button>
+    <mat-menu #sessions="matMenu">
+      <button mat-menu-item>Liste des sessions</button>
       <button mat-menu-item>Ajouter Session</button>
       <button mat-menu-item>Modifier Session</button>
       <button mat-menu-item>Supprimer Session</button>
@@ -21,8 +23,9 @@
 
   <div class="group-navigation">
     <span class="material-icons"> people </span> 
-    <button mat-button [matMenuTriggerFor]="menu" class="menu-item">Administrateurs</button>
-    <mat-menu #menu="matMenu">
+    <button mat-button [matMenuTriggerFor]="administrateurs" class="menu-item">Administrateurs</button>
+    <mat-menu #administrateurs="matMenu">
+      <button mat-menu-item>Liste des administrateurs</button>
       <button mat-menu-item>Ajouter Administrateur</button>
       <button mat-menu-item>Modifier Administrateur</button>
       <button mat-menu-item>Supprimer Administrateur</button>
