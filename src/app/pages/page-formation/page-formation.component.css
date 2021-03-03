@@ -1,4 +1,6 @@
 .session-page {
     display: flex;
-    margin:50px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
 }

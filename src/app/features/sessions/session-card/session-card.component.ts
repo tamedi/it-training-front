@@ -10,15 +10,6 @@ import { SessionHttpService } from 'src/app/services/session-http.service';
 export class SessionCardComponent implements OnInit {
 
   @Input() session:Session;
-  // ={
-  //       "id": 1,
-  //       "numero":1235498,
-  //       "date_debut": "22 juin 2020",
-  //       "date_fin": "28 juillet 2020",
-  //       "prix":"4055 €",
-  //       "lieu": "Paris"
-  //   };
-    
 
   constructor() { }
 

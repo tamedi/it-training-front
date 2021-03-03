@@ -1,13 +1,8 @@
 <div class="session-page">
     <div class="session-description">
         <h2> {{formation.titre}}</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Vivamus egestas enim in lectus scelerisque fermentum.
-            Nam quis lectus nulla. Suspendisse iaculis pharetra est, at pharetra odio tempor a.
-            Sed leo urna, fringilla vel luctus in, consectetur ac augue. Morbi vitae iaculis justo,
-            non pharetra turpis. Cras vel enim magna. Morbi aliquet diam cursus luctus pulvinar. Cras porta ipsum ac
-            accumsan elementum.</p>
+        <p>{{formation.description}}</p>
     </div>
     <div class="session-card">
-       <app-list-sessions [sessions]="formation.sessions"></app-list-sessions>
+        <app-list-sessions [sessions]="formation.sessions"></app-list-sessions>
     </div>
