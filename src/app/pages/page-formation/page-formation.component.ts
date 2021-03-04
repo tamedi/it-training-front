@@ -17,10 +17,10 @@ export class PageFormationComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    var id=1;
-    this.formationhttpService.findById(id).subscribe(res => {
+    this.formationhttpService.findById(this.formation.id).subscribe(res => {
       this.formation = res;
     })
+    console.log(this.formation)
   }
 
 }

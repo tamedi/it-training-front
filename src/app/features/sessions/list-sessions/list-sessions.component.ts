@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Formation } from 'src/app/models/formation';
 import { Session } from 'src/app/models/Session';
 
 @Component({
