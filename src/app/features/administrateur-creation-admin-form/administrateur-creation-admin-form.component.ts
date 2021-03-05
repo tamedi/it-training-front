@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-administrateur-creation-admin-form',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdministrateurCreationAdminFormComponent implements OnInit {
 
-  constructor() { }
+  administrateurForm: FormGroup;
+
+  constructor(private fb: FormBuilder) { 
+    this.administrateurForm = this.fb.group({
+      nom: [''],
+      prenom: [''],
+      email: [''],
+      telephone: [''],
+      password: ['']
+    })
+  }
 
   ngOnInit(): void {
+  }
+
+  onCreate():void {
+    console.log(this.administrateurForm.value);
   }
 
 }
