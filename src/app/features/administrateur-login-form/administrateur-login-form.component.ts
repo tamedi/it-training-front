@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { DemandeAuth } from 'src/app/models/DemandeAuth';
+import { MessageAuth } from 'src/app/models/MessageAuth';
 import { AdministrateurService } from 'src/app/services/administrateur.service';
 
 @Component({
@@ -14,6 +15,7 @@ export class AdministrateurLoginFormComponent implements OnInit {
   loginForm: FormGroup;
   idAdmi: number;
   demandeAuth: DemandeAuth;
+  messageAuth: MessageAuth;
   
   constructor(
     private fb: FormBuilder, 
@@ -26,15 +28,18 @@ export class AdministrateurLoginFormComponent implements OnInit {
    }
 
   ngOnInit(): void {
-  }
-
-  
+  }  
 
   connexion(): void {
     this.demandeAuth = new DemandeAuth(this.loginForm.value.email, this.loginForm.value.password);
-    if(this.loginForm.value.idAdmin === true){
-      this.router.navigate(['/dashboard']);
-    }
+    this.administrateurService.login(this.demandeAuth).subscribe(res => {
+      this.messageAuth = new MessageAuth(res.adminId, res.message, res.isAuth); 
+        if(res.isAuth == true) {
+          this.router.navigate(['/dashboard']);
+        } else {
+          console.log(this.messageAuth);
+        }
+    })
   }
 
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AdministrateurService } from 'src/app/services/administrateur.service';
 
 @Component({
   selector: 'app-login',
@@ -7,7 +6,6 @@ import { AdministrateurService } from 'src/app/services/administrateur.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
   
   constructor() { }
 
