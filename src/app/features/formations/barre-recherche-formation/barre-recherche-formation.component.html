@@ -1,0 +1,22 @@
+<div>
+    <label for="site-search">rechercher formation:</label>
+        <input #myInput type="text" id="site-search" name="q"
+            aria-label="Search through site content"
+            (keyup.enter)="doSearch(myInput.value)">
+
+        <button (click)="doSearch(myInput.value)">Rechercher</button>
+</div>
+
+<!-- <div>
+    
+    <form action="">
+        <input  type="search" 
+                (ngModelChange)="searchFormations(key.value)" #key="ngModel" ngModel
+                id="site-search" name="key"
+                aria-label="Search through site content"
+            >
+    </form>
+        
+
+        
+</div> -->

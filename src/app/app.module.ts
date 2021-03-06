@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
 import { ListeDesThemesComponent } from './features/themes/liste-des-themes/liste-des-themes.component';
+import { BarreRechercheFormationComponent } from './features/formations/barre-recherche-formation/barre-recherche-formation.component';
 
 
 @NgModule({
@@ -32,7 +33,9 @@ import { ListeDesThemesComponent } from './features/themes/liste-des-themes/list
    
     FormationByIdComponent,
    
-    ListeDesThemesComponent
+    ListeDesThemesComponent,
+   
+    BarreRechercheFormationComponent
   ],
   imports: [
     BrowserModule,

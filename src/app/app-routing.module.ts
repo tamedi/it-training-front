@@ -4,6 +4,7 @@ import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-fo
 import { PageFormationListeComponent } from './pages/page-formation-liste/page-formation-liste.component';
 
 const routes: Routes = [
+  {path: "search/:keyword", component:PageFormationListeComponent},
   {path:"formations", component:PageFormationListeComponent},
   {path:"formations/:id", component:PageFormationByIdComponent}
   

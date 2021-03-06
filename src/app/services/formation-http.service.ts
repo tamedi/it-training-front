@@ -14,11 +14,15 @@ export class FormationHttpService {
     return this.httpClient.get<Formation[]>(this.baseUrl)
   }
   findById(id:number){
+
     return this.httpClient.get<Formation>(`http://localhost:9191/formations/${id}`)
   }
   save(formation:Formation){
     return this.httpClient.post<Formation>(this.baseUrl, formation);
   }
 
+  searchFormations(titre:string){
+    return this.httpClient.get<Formation>(`http://localhost:9191/formations/titre/${titre}`)
+  }
 
 }
