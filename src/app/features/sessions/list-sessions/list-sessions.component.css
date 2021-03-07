@@ -1,6 +1,6 @@
 .session-list-comp {
     margin-right: 100px;
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: #DBDCDD;
     padding: 10px;
     display: flex;
@@ -10,5 +10,6 @@
 
 .session-list-comp h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 22px;
+    color: rgb(45, 53, 56);
 }

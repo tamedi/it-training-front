@@ -10,6 +10,8 @@ import { FormationHttpService } from 'src/app/services/formation-http.service';
 })
 export class PageFormationComponent implements OnInit {
 
+ @Input() idFormation:number 
+ 
  formation: Formation
 
   constructor(private formationhttpService: FormationHttpService) {
@@ -17,10 +19,9 @@ export class PageFormationComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.formationhttpService.findById(this.formation.id).subscribe(res => {
+    this.formationhttpService.findById(this.idFormation).subscribe(res => { 
       this.formation = res;
     })
-    console.log(this.formation)
   }
 
 }
