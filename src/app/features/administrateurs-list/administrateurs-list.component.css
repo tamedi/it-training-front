@@ -14,4 +14,15 @@
 .administrateurs-liste table th {
     font-size: 20px;
     background-color: #947689;
+    padding: 10px;
+}
+
+.administrateurs-liste table tr td {
+    padding: 10px;
+}
+
+.administrateurs-liste table td button {
+    background-color: #947689;
+    display: block;
+    margin: auto;
 }

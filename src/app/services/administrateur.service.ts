@@ -27,4 +27,12 @@ export class AdministrateurService {
     return this.httpClient.get<Administrateur[]>(`${this.baseUrl}`);
   }
 
+  update(administrateurNew:AdministrateurNew, id:number): Observable<Administrateur> {
+    return this.httpClient.put<Administrateur>(`${this.baseUrl}/editer/${id}`, administrateurNew);
+  }
+
+  delete(id:number){
+    return this.httpClient.delete(`${this.baseUrl}/${id}`);
+  }
+
 }
