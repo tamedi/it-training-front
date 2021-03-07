@@ -11,7 +11,7 @@ import { FormationHttpService } from 'src/app/services/formation-http.service';
 export class ListeComponent implements OnInit {
 
   formations: Formation[];
-  searchMode: boolean;
+  // searchMode: boolean;
   constructor(private formationHttpservice: FormationHttpService,
               private route: ActivatedRoute) { }
 
