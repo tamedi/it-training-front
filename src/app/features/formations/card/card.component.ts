@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class CardComponent implements OnInit {
 
   @Input()
-  formation!: Formation;
+  formation: Formation;
   constructor(private formationHttpservice: FormationHttpService,
               private primengConfig: PrimeNGConfig,
               private router : Router
@@ -20,9 +20,13 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
     this.primengConfig.ripple = true;
+
   }
+
   
   formationById(id:number){
     this.router.navigate(['formations', id])
   }
+
+  
 }

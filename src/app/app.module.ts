@@ -31,6 +31,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
 import { ListeDesThemesComponent } from './features/themes/liste-des-themes/liste-des-themes.component';
+import { BarreRechercheFormationComponent } from './features/formations/barre-recherche-formation/barre-recherche-formation.component';
+
 import { SearchBarComponent } from './features/search-bar/search-bar.component';
 import { UpdateFormationComponent } from './pages/update-formation/update-formation.component';
 import {MatDialogModule} from '@angular/material/dialog';
@@ -54,6 +56,15 @@ import { ListSessionsComponent } from './features/sessions/list-sessions/list-se
     FooterComponent,
     CardComponent,
     ListeComponent,
+    PageFormationListeComponent,
+   
+    PageFormationByIdComponent,
+   
+    FormationByIdComponent,
+   
+    ListeDesThemesComponent,
+   
+    BarreRechercheFormationComponent,
     PageFormationListeComponent, 
     PageFormationByIdComponent,  
     FormationByIdComponent,   

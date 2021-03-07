@@ -1,3 +1,5 @@
+
+
 import { componentFactoryName } from '@angular/compiler';
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -14,6 +16,7 @@ import { PageFormationListeComponent } from './pages/page-formation-liste/page-f
 import { UpdateFormationComponent } from './pages/update-formation/update-formation.component';
 
 const routes: Routes = [
+  // {path: "search/:keyword", component:PageFormationListeComponent},
   {path:"", component:AppComponent},
   {path:"formations", component:PageFormationListeComponent},
   {path:"formations/:id", component:PageFormationByIdComponent},
