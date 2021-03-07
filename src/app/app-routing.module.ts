@@ -2,6 +2,7 @@ import { componentFactoryName } from '@angular/compiler';
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { AjoutAdministrateurFormComponent } from './features/ajout-administrateur-form/ajout-administrateur-form.component';
 import { AjoutFormationFormComponent } from './features/ajout-formation-form/ajout-formation-form.component';
 import { CardComponent } from './features/formations/card/card.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
@@ -16,11 +17,11 @@ const routes: Routes = [
   {path:"formations", component:PageFormationListeComponent},
   {path:"formations/:id", component:PageFormationByIdComponent},
   {path:"login", component:LoginComponent},
-  {path:"dashboard", component:DashboardComponent,
-    data:{header:false},
+  {path:"dashboard/:id", component:DashboardComponent,
     children: [
       {path: "ajoutFormation",component:AjoutFormationFormComponent},
-      {path: "modifierFormation", component:UpdateFormationComponent}
+      {path: "modifierFormation", component:UpdateFormationComponent},
+      {path: "admin-creation", component:AjoutAdministrateurFormComponent}
   ]}
   
 ];

@@ -32,6 +32,8 @@ import { FormationByIdComponent } from './features/formations/formation-by-id/fo
 import { ListeDesThemesComponent } from './features/themes/liste-des-themes/liste-des-themes.component';
 import { SearchBarComponent } from './features/search-bar/search-bar.component';
 import { UpdateFormationComponent } from './pages/update-formation/update-formation.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { AjoutAdministrateurFormComponent } from './features/ajout-administrateur-form/ajout-administrateur-form.component';
 
 
 @NgModule({
@@ -52,7 +54,8 @@ import { UpdateFormationComponent } from './pages/update-formation/update-format
     NavigationDashboardComponent,
     AjoutFormationFormComponent,
     SearchBarComponent,
-    UpdateFormationComponent
+    UpdateFormationComponent,
+    AjoutAdministrateurFormComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +71,8 @@ import { UpdateFormationComponent } from './pages/update-formation/update-format
     MatSidenavModule,
     MatMenuModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],

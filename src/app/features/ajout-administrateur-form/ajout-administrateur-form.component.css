@@ -1,0 +1,15 @@
+.creation-admin-form {
+    padding-top: 30vh;
+    width: 30%;
+    margin:auto;
+}
+
+.creation-admin-form h1 {
+    color:bisque;
+    text-align: center;
+}
+
+.creation-admin-form form {
+    display: flex;
+    flex-direction: column;
+}

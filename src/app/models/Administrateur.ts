@@ -1,7 +1,6 @@
 export class Administrateur {
-    private _id:number;
-
     constructor(
+        private _id:number,
         private _nom:string,
         private _prenom:string,
         private _email:string,
