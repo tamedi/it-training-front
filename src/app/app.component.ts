@@ -18,7 +18,7 @@ export class AppComponent {
 
   modifyHeader(location:any) {
     console.log(location.url)
-    if(location.url == "/dashboard" || location.url == undefined) {
+    if(location.url == "/dashboard" ) { // === undefinned
       this.showHeader = false;
     } else  {
       this.showHeader = true;
