@@ -9,8 +9,9 @@ import { AdministrateurLoginFormComponent } from './features/administrateur-logi
 import { AdministrateurCreationAdminFormComponent } from './features/administrateur-creation-admin-form/administrateur-creation-admin-form.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
-import { FooterComponent } from './commons/footer/footer.component';
+import {DropdownModule} from 'primeng/dropdown';
 import { HeaderComponent } from './commons/header/header.component';
+import { FooterComponent } from './commons/footer/footer.component';
 import { NavigationDashboardComponent } from './commons/navigation-dashboard/navigation-dashboard.component';
 import { CardComponent } from './features/formations/card/card.component';
 import { ListeComponent } from './features/formations/liste/liste.component';
@@ -36,6 +37,10 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { AjoutAdministrateurFormComponent } from './features/ajout-administrateur-form/ajout-administrateur-form.component';
 import { AdministrateursListComponent } from './features/administrateurs-list/administrateurs-list.component';
 import {MatTableModule} from '@angular/material/table';
+import { SessionCardComponent } from './features/sessions/session-card/session-card.component';
+import { PageFormationComponent } from './pages/page-formation/page-formation.component';
+import { ListSessionsComponent } from './features/sessions/list-sessions/list-sessions.component';
+
 
 @NgModule({
   declarations: [
@@ -44,6 +49,7 @@ import {MatTableModule} from '@angular/material/table';
     AdministrateurCreationAdminFormComponent,
     DashboardComponent,
     LoginComponent,
+    SessionCardComponent,
     HeaderComponent,
     FooterComponent,
     CardComponent,
@@ -57,7 +63,13 @@ import {MatTableModule} from '@angular/material/table';
     SearchBarComponent,
     UpdateFormationComponent,
     AjoutAdministrateurFormComponent,
-    AdministrateursListComponent
+    AdministrateursListComponent,
+    PageFormationListeComponent,
+    PageFormationByIdComponent,
+    FormationByIdComponent,
+    ListeDesThemesComponent,
+    PageFormationComponent,
+    ListSessionsComponent
   ],
   imports: [
     BrowserModule,
@@ -65,6 +77,7 @@ import {MatTableModule} from '@angular/material/table';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    DropdownModule,
     CardModule,
     ButtonModule,
     BrowserAnimationsModule,

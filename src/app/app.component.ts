@@ -1,12 +1,16 @@
-import { Component, Input } from '@angular/core';
 import { Event, Router } from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
+import { Formation } from './models/formation';
+import { Session } from './models/Session';
+import { SessionHttpService } from './services/session-http.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+
   title = 'it-training-front';
   showHeader:boolean;
 
