@@ -2,6 +2,7 @@ import { componentFactoryName } from '@angular/compiler';
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { AdministrateursListComponent } from './features/administrateurs-list/administrateurs-list.component';
 import { AjoutAdministrateurFormComponent } from './features/ajout-administrateur-form/ajout-administrateur-form.component';
 import { AjoutFormationFormComponent } from './features/ajout-formation-form/ajout-formation-form.component';
 import { CardComponent } from './features/formations/card/card.component';
@@ -21,7 +22,8 @@ const routes: Routes = [
     children: [
       {path: "ajoutFormation",component:AjoutFormationFormComponent},
       {path: "modifierFormation", component:UpdateFormationComponent},
-      {path: "admin-creation", component:AjoutAdministrateurFormComponent}
+      {path: "admin-creation", component:AjoutAdministrateurFormComponent},
+      {path: "administrateurs", component:AdministrateursListComponent}
   ]}
   
 ];

@@ -34,7 +34,8 @@ import { SearchBarComponent } from './features/search-bar/search-bar.component';
 import { UpdateFormationComponent } from './pages/update-formation/update-formation.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AjoutAdministrateurFormComponent } from './features/ajout-administrateur-form/ajout-administrateur-form.component';
-
+import { AdministrateursListComponent } from './features/administrateurs-list/administrateurs-list.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { AjoutAdministrateurFormComponent } from './features/ajout-administrateu
     AjoutFormationFormComponent,
     SearchBarComponent,
     UpdateFormationComponent,
-    AjoutAdministrateurFormComponent
+    AjoutAdministrateurFormComponent,
+    AdministrateursListComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +74,8 @@ import { AjoutAdministrateurFormComponent } from './features/ajout-administrateu
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],

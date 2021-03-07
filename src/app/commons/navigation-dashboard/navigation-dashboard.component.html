@@ -36,7 +36,7 @@
     <span class="material-icons"> people </span> 
     <button mat-button [matMenuTriggerFor]="administrateurs" class="menu-item">Administrateurs</button>
     <mat-menu #administrateurs="matMenu">
-      <button mat-menu-item>Liste des administrateurs</button>
+      <button mat-menu-item [routerLink]="'administrateurs'">Liste des administrateurs</button>
       <button mat-menu-item [routerLink]="'admin-creation'">Ajouter Administrateur</button>
       <button mat-menu-item>Modifier Administrateur</button>
       <button mat-menu-item>Supprimer Administrateur</button>

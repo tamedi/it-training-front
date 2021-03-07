@@ -1,0 +1,16 @@
+.administrateurs-liste {
+    width: 35%;
+    margin: auto;
+}
+
+.administrateurs-liste h1 {
+    text-align: center;
+}
+
+.administrateurs-liste table {
+    width: 100%;
+}
+
+.administrateurs-liste table th {
+    font-size: 20px;
+}

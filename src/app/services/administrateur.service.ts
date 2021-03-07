@@ -23,4 +23,8 @@ export class AdministrateurService {
     return this.httpClient.post<Administrateur>(`${this.baseUrl}/ajout`, administrateur);
   }
 
+  getAll(): Observable<Administrateur[]> {
+    return this.httpClient.get<Administrateur[]>(`${this.baseUrl}`);
+  }
+
 }
