@@ -1,0 +1,14 @@
+<div class="login-form">
+    <form [formGroup]="loginForm" (ngSubmit)="connexion()">
+        <h1>Connexion à votre compte</h1>
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" required formControlName="email">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="'password'" formControlName="password">
+          </mat-form-field>
+          <button mat-raised-button color="primary" type="submit">Connexion</button>       
+    </form>
+</div>

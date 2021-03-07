@@ -1,0 +1,24 @@
+#dashboard-container {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid #555;
+}
+
+#dashboard-container .titre {
+  padding: 20px 0 0 20px;
+  display: flex;
+}
+
+#sidenav-dashboard {
+    width: 30vh;
+    height: 100vh;
+}
+
+#sidenav-dashboard .material-icons {
+  margin-top: 3px;
+}
+
+#sidenav-dashboard h1 {
+  margin-left: 5px;
+  color: antiquewhite;
+}

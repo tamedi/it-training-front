@@ -1,0 +1,11 @@
+#dashboard-region-main {
+    padding: 25px;
+    flex: auto;
+    height: 100vh;
+    width: 85em;
+}
+
+#dashboard-region-main .p-fluid {
+    padding: 25px;
+    display: block;
+}

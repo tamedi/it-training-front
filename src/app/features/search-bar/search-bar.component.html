@@ -1,0 +1,12 @@
+<div class="find-formation-form">
+    <h1>Modificaton d'une formation</h1>
+    <form [formGroup]="formationSearchGroup" (ngSubmit)="findFormation()">
+        <mat-form-field class="input-form">
+            <mat-label>Titre formation</mat-label>
+            <input matInput placeholder="Titre">
+          </mat-form-field>
+          <button mat-icon-button>
+            <span class="material-icons">search</span>
+          </button>
+    </form>
+</div>

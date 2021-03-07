@@ -1,0 +1,33 @@
+<div class="creation-admin-form">
+    <form [formGroup]="creationAdminForm" (ngSubmit)="onCreate()">
+        <h1>Création admiinistrateur</h1>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Nom</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="nom">
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Prénom</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="prenom">
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Téléphone</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="telephone">
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Mot de passe</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="password" type="password">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit">Enregistrer</button>
+
+    </form>
+</div>

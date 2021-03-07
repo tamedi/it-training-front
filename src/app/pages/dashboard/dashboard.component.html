@@ -1,0 +1,17 @@
+<mat-drawer-container id="dashboard-container">
+    <mat-drawer mode="side" opened id="sidenav-dashboard">
+      <div class="titre">
+        <span class="material-icons">
+          dashboard
+          </span>
+        <h1>Tableau de bord</h1>
+      </div>
+        <app-navigation-dashboard></app-navigation-dashboard>
+    </mat-drawer>
+    
+    <mat-drawer-content>
+      <div>Bienvenue :  {{ messageAuth.message }} </div>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+

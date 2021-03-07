@@ -1,0 +1,15 @@
+.login-form {
+    padding-top: 30vh;
+    width: 30%;
+    margin:auto;
+}
+
+.login-form h1 {
+    color:bisque;
+    text-align: center;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
