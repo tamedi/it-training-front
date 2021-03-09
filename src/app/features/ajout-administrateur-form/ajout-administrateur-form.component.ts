@@ -36,9 +36,6 @@ export class AjoutAdministrateurFormComponent implements OnInit {
       this.creationAdminForm.value.telephone,
       this.creationAdminForm.value.password);
 
-      //console.log(this.creationAdminForm.value);
-      console.log(this.administrateurNew);
-
       this.administrateurService.save(this.administrateurNew).subscribe(res => {
           console.log(res);
       });

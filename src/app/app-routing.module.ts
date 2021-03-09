@@ -21,7 +21,7 @@ const routes: Routes = [
   {path:"formations", component:PageFormationListeComponent},
   {path:"formations/:id", component:PageFormationByIdComponent},
   {path:"login", component:LoginComponent},
-  {path:"dashboard/:id", component:DashboardComponent,
+  {path:"dashboard", component:DashboardComponent,
     children: [
       {path: "ajoutFormation",component:AjoutFormationFormComponent},
       {path: "modifierFormation", component:UpdateFormationComponent},

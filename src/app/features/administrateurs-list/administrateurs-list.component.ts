@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Administrateur } from 'src/app/models/Administrateur';
-import { AdministrateurNew } from 'src/app/models/AdministrateurNew';
 import { AdministrateurService } from 'src/app/services/administrateur.service';
 
 @Component({
@@ -22,8 +21,8 @@ export class AdministrateursListComponent implements OnInit {
     })
   }
 
-  deleteAdmin(id:number) {
-      this.administrateurService.delete(id).subscribe(res => {
+  deleteAdmin(administrateur: Administrateur) {
+      this.administrateurService.delete(administrateur).subscribe(res => {
         console.log(res);
     });
   }

@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Administrateur } from '../models/Administrateur';
@@ -31,8 +31,20 @@ export class AdministrateurService {
     return this.httpClient.put<Administrateur>(`${this.baseUrl}/editer/${id}`, administrateurNew);
   }
 
-  delete(id:number){
+  deleteById(id:number){
     return this.httpClient.delete(`${this.baseUrl}/${id}`);
+  }
+
+  delete(administrateur: Administrateur){
+
+    const options = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      }),
+      body: administrateur,
+    };
+
+    return this.httpClient.delete(`${this.baseUrl}`, options);
   }
 
 }

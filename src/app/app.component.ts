@@ -1,31 +1,30 @@
-import { Event, Router } from '@angular/router';
-import { Component, Input, OnInit } from '@angular/core';
-import { Formation } from './models/formation';
-import { Session } from './models/Session';
-import { SessionHttpService } from './services/session-http.service';
+import { Component } from '@angular/core';
+import { Router, NavigationStart  } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
-
+export class AppComponent {
   title = 'it-training-front';
   showHeader:boolean;
 
   constructor(private router: Router){};
 
   ngOnInit() {
-    this.router.events.subscribe(event => this.modifyHeader(event));
+    this.router.events.subscribe(event => {
+      if(event instanceof NavigationStart) {
+        this.modifyHeader(event.url)
+      }
+    });
   }
 
-  modifyHeader(location:any) {
-    console.log(location.url)
-    if(location.url == "/dashboard" ) { // === undefinned
-      this.showHeader = false;
-    } else  {
+  modifyHeader(url:string) {
+    if(url == "/" || url == "/formations") {
       this.showHeader = true;
+    } else {
+      this.showHeader = false;
     }
   }
 

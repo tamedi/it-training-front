@@ -1,52 +1,38 @@
 .header{
     position: relative;
-    max-width: 100%;
-    margin: 20px auto;
-    margin-top:0;
-    padding: 10px;
-    background:#F7F7F7;
-    box-sizing: border-box;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba((0,0,0,.2), green, blue, alpha);
-
-}
-.logo{
-    color: #fc9804;
-    height: 60px;
-    font-size: 36px;
-    line-height: 60px;
-    padding: 0 20px;
-    background: rgb(3, 165, 130);
-    text-align: center;
-    box-sizing: border-box;
-    float: left;
-    font-weight: 700;
-    text-decoration: none;
-}
-nav{
-    float: right;
-}
-.clearfix{
-    clear: both;
-}
-nav ul {
-    margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
 }
-nav ul li {
-    list-style: none;
+
+.header .logo {
+    margin: 10px;
 }
-nav ul li a {
-    display: block;
-    margin: 10px 0;
-    padding: 10px 20px;
+
+.header a img{
+    width: 160px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.menu .nav-item {
+    margin-right: 10px;
+}
+
+.menu .nav-item a {
     text-decoration: none;
-    color: #262626;
+    font-size: 18px;
+    color: grey;
+    margin-left: 13px;
+    font-weight: 800;
 }
-nav ul li a.active,
-nav ul li a:hover {
-    background: #069370;
-    color: #fff;
-    transition: 0.5s;
+
+.menu .nav-item a:hover,
+.menu .nav-item a:focus {
+    color:#5DA0A2;
 }

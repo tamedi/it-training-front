@@ -35,7 +35,7 @@ export class AdministrateurLoginFormComponent implements OnInit {
     this.administrateurService.login(this.demandeAuth).subscribe(res => {
       this.messageAuth = new MessageAuth(res.adminId, res.message, res.isAuth); 
         if(res.isAuth == true) {
-          this.router.navigate(['/dashboard', this.messageAuth.adminId]);
+          this.router.navigate(['/dashboard']);
         } else {
           console.log(this.messageAuth);
         }

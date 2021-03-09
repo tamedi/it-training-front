@@ -1,6 +1,6 @@
 <div class="creation-admin-form">
     <form [formGroup]="creationAdminForm" (ngSubmit)="onCreate()">
-        <h1>Création admiinistrateur</h1>
+        <h1>Création compte administrateur</h1>
 
         <mat-form-field appearance="legacy">
             <mat-label>Nom</mat-label>
@@ -27,7 +27,7 @@
             <input matInput placeholder="Placeholder" formControlName="password" type="password">
         </mat-form-field>
 
-        <button mat-raised-button color="primary" type="submit">Enregistrer</button>
+        <button mat-raised-button type="submit">Enregistrer</button>
 
     </form>
 </div>
