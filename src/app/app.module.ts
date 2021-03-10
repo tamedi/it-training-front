@@ -41,6 +41,8 @@ import {MatTableModule} from '@angular/material/table';
 import { SessionCardComponent } from './features/sessions/session-card/session-card.component';
 import { PageFormationComponent } from './pages/page-formation/page-formation.component';
 import { ListSessionsComponent } from './features/sessions/list-sessions/list-sessions.component';
+import { FormulaireInscriptionApprenantComponent } from './features/formulaire-inscription-apprenant/formulaire-inscription-apprenant.component';
+import { AuthentificationApprenantComponent } from './features/authentification-apprenant/authentification-apprenant.component';
 
 
 @NgModule({
@@ -74,7 +76,9 @@ import { ListSessionsComponent } from './features/sessions/list-sessions/list-se
     FormationByIdComponent,
     ListeDesThemesComponent,
     PageFormationComponent,
-    ListSessionsComponent
+    ListSessionsComponent,
+    FormulaireInscriptionApprenantComponent,
+    AuthentificationApprenantComponent
   ],
   imports: [
     BrowserModule,
