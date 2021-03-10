@@ -1,8 +1,8 @@
 {
     "formations": [{
             "id": 1,
-            "titre": "Formation 1",
-            "description": "Description 1",
+            "titre": "Formation Architectures d'entreprise Java EE",
+            "description": "Développer une application Internet ne signifie plus écrire une application qui ne serait disponible que sur le Net. Il s'agit en fait de réaliser un développement avec la technologie éprouvée et standard qui fédère l'Internet. La destination interne ou externe de l’application ne change finalement rien. Pionnier et référence historique en la matière, Java offre une architecture de structuration des applications très complète dont une partie traite des applications Web et une autre des applications d'entreprise (JEE). Les participants à ce séminaire découvriront la robustesse et la puissance de ce modèle.",
             "themes": [],
             "sessions": [{
                     "id": 1,
@@ -24,8 +24,8 @@
         },
         {
             "id": 2,
-            "titre": "Formation 2",
-            "description": "description 2",
+            "titre": "Formation Initiation à la programmation",
+            "description": "Bien qu'en constante évolution, la programmation repose toujours sur des principes élémentaires qu'il convient de maîtriser pour aborder sereinement le développement d’applications informatiques. Par exemple, les notions de boucles ou de conditions sont communes à la quasi-totalité des langages de programmation aujourd'hui disponibles. A l'issue de cette formation, les participants disposeront de solides bases en programmation qui leur permettront de s’orienter ensuite vers le langage de développement de leur choix. Tous les aspects essentiels de la programmation seront abordés, de la programmation procédurale à la programmation objet.",
             "themes": [],
             "sessions": [{
                     "id": 1,

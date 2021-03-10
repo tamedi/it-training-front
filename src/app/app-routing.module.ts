@@ -13,13 +13,14 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
 import { PageFormationListeComponent } from './pages/page-formation-liste/page-formation-liste.component';
+import { PageFormationComponent } from './pages/page-formation/page-formation.component';
 import { UpdateFormationComponent } from './pages/update-formation/update-formation.component';
 
 const routes: Routes = [
   // {path: "search/:keyword", component:PageFormationListeComponent},
   {path:"", component:AppComponent},
   {path:"formations", component:PageFormationListeComponent},
-  {path:"formations/:id", component:PageFormationByIdComponent},
+  {path:"formations/:id", component:PageFormationComponent},
   {path:"login", component:LoginComponent},
   {path:"dashboard", component:DashboardComponent,
     children: [

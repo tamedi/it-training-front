@@ -7,7 +7,7 @@ import { Formation } from '../models/formation';
 })
 export class FormationHttpService {
 
-  private baseUrl = 'http://localhost:9191/formations'
+  private baseUrl = 'http://localhost:3000/formations'
   constructor(private httpClient:HttpClient) { }
 
   getFormationList(){
@@ -15,7 +15,7 @@ export class FormationHttpService {
   }
   findById(id:number){
 
-    return this.httpClient.get<Formation>(`http://localhost:9191/formations/${id}`)
+    return this.httpClient.get<Formation>(`http://localhost:3000/formations/${id}`)
   }
   // save(formation:Formation){
   //   return this.httpClient.post<Formation>(this.baseUrl, formation);

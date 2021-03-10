@@ -1,7 +1,6 @@
 <div class="formation-page">
-    <div class="formation-description">
-        <h2>Formation {{formation.titre}}</h2>
-        <p>{{formation.description}}</p>
+    <div class="detailFormation">
+        <app-formation-by-id></app-formation-by-id>
     </div>
     <div class="session-card">
         <app-list-sessions [sessions]="formation.sessions"></app-list-sessions>

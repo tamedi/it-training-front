@@ -1,0 +1,22 @@
+
+.formation-description {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .formation-description h2 {
+        color: rgb(45, 53, 56);
+        width: auto;
+        background-color: #DBDCDD;
+        margin-bottom: 50px;
+        padding: 10px;
+        width: 100%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+    }
+    
+    .formation-description p {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
