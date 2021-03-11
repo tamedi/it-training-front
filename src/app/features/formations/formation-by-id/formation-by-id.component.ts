@@ -17,11 +17,9 @@ export class FormationByIdComponent implements OnInit {
               private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.formation = new Formation();
     this.id = this.route.snapshot.params['id'];
 
     this.formationHttpservice.findById(this.id).subscribe(data => {
-      console.log(data)
       this.formation = data;
     }, error => console.log(error))
   }

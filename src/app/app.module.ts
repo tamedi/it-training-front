@@ -41,7 +41,9 @@ import {MatTableModule} from '@angular/material/table';
 import { SessionCardComponent } from './features/sessions/session-card/session-card.component';
 import { PageFormationComponent } from './pages/page-formation/page-formation.component';
 import { ListSessionsComponent } from './features/sessions/list-sessions/list-sessions.component';
-
+import { AjoutSessionFormComponent } from './features/sessions/ajout-session-form/ajout-session-form.component';
+import {MatSelectModule} from '@angular/material/select';
+import { ListSessionsDashboardComponent } from './features/sessions/list-sessions-dashboard/list-sessions-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +76,9 @@ import { ListSessionsComponent } from './features/sessions/list-sessions/list-se
     FormationByIdComponent,
     ListeDesThemesComponent,
     PageFormationComponent,
-    ListSessionsComponent
+    ListSessionsComponent,
+    AjoutSessionFormComponent,
+    ListSessionsDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -93,7 +97,8 @@ import { ListSessionsComponent } from './features/sessions/list-sessions/list-se
     MatIconModule,
     MatButtonModule,
     MatDialogModule,
-    MatTableModule
+    MatTableModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent],

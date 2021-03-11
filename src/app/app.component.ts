@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, NavigationStart  } from '@angular/router';
+import { Router, NavigationStart, RouterEvent, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,24 +8,21 @@ import { Router, NavigationStart  } from '@angular/router';
 })
 export class AppComponent {
   title = 'it-training-front';
-  showHeader:boolean;
+  showHeader: boolean;
 
-  constructor(private router: Router){};
+  constructor(private router: Router) {}
 
   ngOnInit() {
-    this.router.events.subscribe(event => {
-      if(event instanceof NavigationStart) {
-        this.modifyHeader(event.url)
-      }
+    this.router.events.subscribe((event: any) => {
+      if (event instanceof NavigationStart) {
+        if (event['url'].startsWith("/dashboard") || event['url'] === "/login") {
+          this.showHeader = false;
+        } else {
+          this.showHeader = true;
+        }
+      } 
     });
   }
 
-  modifyHeader(url:string) {
-    if(url == "/" || url == "/formations") {
-      this.showHeader = true;
-    } else {
-      this.showHeader = false;
-    }
-  }
 
 }

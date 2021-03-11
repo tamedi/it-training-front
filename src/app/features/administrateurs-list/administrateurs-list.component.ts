@@ -16,15 +16,18 @@ export class AdministrateursListComponent implements OnInit {
   tableColumns: string[] = ['nom', 'prenom', 'email', 'telephone', 'supprimer'];
 
   ngOnInit(): void {
+    this.loadData();
+  }
+
+  loadData() {
     this.administrateurService.getAll().subscribe(res => {
-      this.administrateurs = res;
+    this.administrateurs = res;
     })
   }
 
-  deleteAdmin(administrateur: Administrateur) {
-      this.administrateurService.delete(administrateur).subscribe(res => {
-        console.log(res);
-    });
+  deleteAdmin(id: number) {
+    this.administrateurService.deleteById(id).subscribe();   
+    this.administrateurs = this.administrateurs.filter(item => item.id != id);
   }
 
 }
