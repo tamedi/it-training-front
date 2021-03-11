@@ -27,7 +27,6 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 
-import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
 import { ListeDesThemesComponent } from './features/themes/liste-des-themes/liste-des-themes.component';
 import { BarreRechercheFormationComponent } from './features/formations/barre-recherche-formation/barre-recherche-formation.component';
@@ -55,12 +54,10 @@ import { ListSessionsComponent } from './features/sessions/list-sessions/list-se
     CardComponent,
     ListeComponent,
     PageFormationListeComponent,  
-    PageFormationByIdComponent,
     FormationByIdComponent,
     ListeDesThemesComponent,
     BarreRechercheFormationComponent,
     PageFormationListeComponent, 
-    PageFormationByIdComponent,  
     FormationByIdComponent,   
     ListeDesThemesComponent,
     NavigationDashboardComponent,
@@ -70,7 +67,6 @@ import { ListSessionsComponent } from './features/sessions/list-sessions/list-se
     AjoutAdministrateurFormComponent,
     AdministrateursListComponent,
     PageFormationListeComponent,
-    PageFormationByIdComponent,
     FormationByIdComponent,
     ListeDesThemesComponent,
     PageFormationComponent,

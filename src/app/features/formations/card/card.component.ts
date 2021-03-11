@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 })
 export class CardComponent implements OnInit {
 
-  @Input()
-  formation: Formation;
+  @Input()formation: Formation;
+
   constructor(private formationHttpservice: FormationHttpService,
               private primengConfig: PrimeNGConfig,
               private router : Router
@@ -24,8 +24,8 @@ export class CardComponent implements OnInit {
   }
 
   
-  formationById(id:number){
-    this.router.navigate(['formations', id])
+  formationById(){
+    this.router.navigate(['formations',this.formation.formationId])
   }
 
   

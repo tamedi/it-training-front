@@ -1,11 +1,23 @@
+
+
+.ajout-formation-form form button {
+    width: 100%;
+    margin: auto;
+    background-color: #5DA0A2;
+}
+
+.ajout-formation-form {
+    width: 45%;
+    margin:auto;
+}
+
+.ajout-formation-form h1 {
+    color:bisque;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .ajout-formation-form form {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    margin: auto;
-}
-
-.ajout-formation-form form button {
-    width: 20%;
-    margin: auto;
 }
