@@ -13,6 +13,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
 import { PageFormationListeComponent } from './pages/page-formation-liste/page-formation-liste.component';
+import { PageFormulaireInscriptionApprenantComponent } from './pages/page-formulaire-inscription-apprenant/page-formulaire-inscription-apprenant.component';
 import { UpdateFormationComponent } from './pages/update-formation/update-formation.component';
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:"formations", component:PageFormationListeComponent},
   {path:"formations/:id", component:PageFormationByIdComponent},
   {path:"login", component:LoginComponent},
+  {path:"apprenant",component:PageFormulaireInscriptionApprenantComponent},
   {path:"dashboard", component:DashboardComponent,
     children: [
       {path: "ajoutFormation",component:AjoutFormationFormComponent},

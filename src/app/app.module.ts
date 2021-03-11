@@ -43,6 +43,11 @@ import { PageFormationComponent } from './pages/page-formation/page-formation.co
 import { ListSessionsComponent } from './features/sessions/list-sessions/list-sessions.component';
 import { FormulaireInscriptionApprenantComponent } from './features/formulaire-inscription-apprenant/formulaire-inscription-apprenant.component';
 import { AuthentificationApprenantComponent } from './features/authentification-apprenant/authentification-apprenant.component';
+import { PageFormulaireInscriptionApprenantComponent } from './pages/page-formulaire-inscription-apprenant/page-formulaire-inscription-apprenant.component';
+import { MatCardModule } from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+
 
 
 @NgModule({
@@ -78,7 +83,8 @@ import { AuthentificationApprenantComponent } from './features/authentification-
     PageFormationComponent,
     ListSessionsComponent,
     FormulaireInscriptionApprenantComponent,
-    AuthentificationApprenantComponent
+    AuthentificationApprenantComponent,
+    PageFormulaireInscriptionApprenantComponent
   ],
   imports: [
     BrowserModule,
@@ -97,7 +103,9 @@ import { AuthentificationApprenantComponent } from './features/authentification-
     MatIconModule,
     MatButtonModule,
     MatDialogModule,
-    MatTableModule
+    MatTableModule,
+    MatCardModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent],
