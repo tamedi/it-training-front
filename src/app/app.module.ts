@@ -46,6 +46,7 @@ import { AuthentificationApprenantComponent } from './features/authentification-
 import { PageFormulaireInscriptionApprenantComponent } from './pages/page-formulaire-inscription-apprenant/page-formulaire-inscription-apprenant.component';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { PageAuthentificationApprenantComponent } from './pages/page-authentification-apprenant/page-authentification-apprenant.component';
 
 
 
@@ -84,7 +85,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ListSessionsComponent,
     FormulaireInscriptionApprenantComponent,
     AuthentificationApprenantComponent,
-    PageFormulaireInscriptionApprenantComponent
+    PageFormulaireInscriptionApprenantComponent,
+    PageAuthentificationApprenantComponent
   ],
   imports: [
     BrowserModule,

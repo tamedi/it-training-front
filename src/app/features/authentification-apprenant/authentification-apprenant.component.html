@@ -1,1 +1,23 @@
-<p>authentification-apprenant works!</p>
+<div fxLayoutAlign="center center" fxFlexFill>
+    <form class="example-form" [formGroup]="apprenantAuthentification" >
+        <mat-card>
+        
+              <mat-form-field class="example-full-width">
+                <mat-label>Adresse mail:</mat-label>
+                <input matInput formControlName="email">
+              </mat-form-field>
+        
+              <mat-form-field class="example-full-width">
+                <mat-label>Mot de passe:</mat-label>
+                <input matInput formControlName="password" type="password">
+              </mat-form-field>
+          
+              <button mat-raised-button class="example-full-width" type="submit">Connexion</button>
+
+        </mat-card>
+        
+      </form>
+   </div>
+  
+  
+

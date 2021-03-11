@@ -11,6 +11,7 @@ import { CardComponent } from './features/formations/card/card.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
+import { PageAuthentificationApprenantComponent } from './pages/page-authentification-apprenant/page-authentification-apprenant.component';
 import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
 import { PageFormationListeComponent } from './pages/page-formation-liste/page-formation-liste.component';
 import { PageFormulaireInscriptionApprenantComponent } from './pages/page-formulaire-inscription-apprenant/page-formulaire-inscription-apprenant.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path:"formations/:id", component:PageFormationByIdComponent},
   {path:"login", component:LoginComponent},
   {path:"apprenant",component:PageFormulaireInscriptionApprenantComponent},
+  {path:"auth",component:PageAuthentificationApprenantComponent},
   {path:"dashboard", component:DashboardComponent,
     children: [
       {path: "ajoutFormation",component:AjoutFormationFormComponent},
