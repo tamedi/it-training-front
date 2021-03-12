@@ -24,7 +24,7 @@ const routes: Routes = [
   {path:"formations/:id", component:PageFormationByIdComponent},
   {path:"login", component:LoginComponent},
   {path:"apprenant",component:PageFormulaireInscriptionApprenantComponent},
-  {path:"auth",component:PageAuthentificationApprenantComponent},
+  {path:"authentification",component:PageAuthentificationApprenantComponent},
   {path:"dashboard", component:DashboardComponent,
     children: [
       {path: "ajoutFormation",component:AjoutFormationFormComponent},

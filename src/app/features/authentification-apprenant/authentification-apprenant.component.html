@@ -1,5 +1,5 @@
 <div fxLayoutAlign="center center" fxFlexFill>
-    <form class="example-form" [formGroup]="apprenantAuthentification" >
+    <form class="example-form" [formGroup]="formGroup" (ngSubmit)="loginProces()">
         <mat-card>
         
               <mat-form-field class="example-full-width">
