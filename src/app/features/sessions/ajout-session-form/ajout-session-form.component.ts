@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSelectChange } from '@angular/material/select';
 import { Formation } from 'src/app/models/formation';
 import { SessionNew } from 'src/app/models/SessionNew';
@@ -23,10 +23,10 @@ export class AjoutSessionFormComponent implements OnInit {
     private sessionService: SessionHttpService,
     private formationService: FormationHttpService) {
       this.creationSeesionForm = this.fb.group({
-        dateDebut: [''],
-        dateFin: [''],
-        prix: [''],
-        lieu: ['']
+        dateDebut: ['', Validators.required],
+        dateFin: ['', Validators.required],
+        prix: ['', Validators.required],
+        lieu: ['', Validators.required]
       });
      }
 
@@ -48,8 +48,9 @@ export class AjoutSessionFormComponent implements OnInit {
       this.creationSeesionForm.value.lieu,
       this.formationSelected
     );
-    console.log(this.sessionNew)
+
     this.sessionService.save(this.sessionNew).subscribe();
+    this.creationSeesionForm.reset();   
   }
 
 }

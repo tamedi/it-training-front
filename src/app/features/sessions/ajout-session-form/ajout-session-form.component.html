@@ -4,7 +4,7 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Formation</mat-label>
-            <mat-select (selectionChange)="updateValueFormation($event)">
+            <mat-select (selectionChange)="updateValueFormation($event)" formControlName="formation">
                 <mat-option *ngFor="let formationOption of formationsList" 
                     [value]="formationOption">
                     {{formationOption.titre}}

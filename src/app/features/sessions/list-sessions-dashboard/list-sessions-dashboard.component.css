@@ -1,30 +1,52 @@
 .sessions-liste {
     width: 60%;
     margin: auto;
+    margin-top: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(37, 37, 39);
+    border-width: 3px;
 }
 
-.sessions-liste h1 {
+.sessions-liste h2 {
     text-align: center;
     margin-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #0B566C;
+    padding: 3px 0;
 }
 
 .sessions-liste table {
     width: 100%;
-    margin-top: 40px;
 }
 
 .sessions-liste table th {
-    font-size: 20px;
-    background-color:  #5DA0A2;
+    font-size: 18px;
+    background-color: #5DA0A2;
     padding: 10px;
+    text-align: center;
 }
 
 .sessions-liste table tr td {
     padding: 10px;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    border-right: 1px dotted gray;
+}
+
+.sessions-liste  table tr:nth-child(odd) td{
+    background-color: #E4E4E4;
+}
+
+.sessions-liste  table tr:nth-child(even) td{
+    background-color: #D0D0D0;
 }
 
 .sessions-liste table td button {
     background-color:  #5DA0A2;
     display: block;
     margin: auto;
+    color: #D0D0D0;
 }

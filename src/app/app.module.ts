@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -44,6 +44,8 @@ import { ListSessionsComponent } from './features/sessions/list-sessions/list-se
 import { AjoutSessionFormComponent } from './features/sessions/ajout-session-form/ajout-session-form.component';
 import {MatSelectModule} from '@angular/material/select';
 import { ListSessionsDashboardComponent } from './features/sessions/list-sessions-dashboard/list-sessions-dashboard.component';
+import { DialogSuppressionElementComponent } from './features/dialog-suppression-element/dialog-suppression-element.component';
+import { DialogConfirmationAjoutComponent } from './features/dialog-confirmation-ajout/dialog-confirmation-ajout.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +80,9 @@ import { ListSessionsDashboardComponent } from './features/sessions/list-session
     PageFormationComponent,
     ListSessionsComponent,
     AjoutSessionFormComponent,
-    ListSessionsDashboardComponent
+    ListSessionsDashboardComponent,
+    DialogSuppressionElementComponent,
+    DialogConfirmationAjoutComponent
   ],
   imports: [
     BrowserModule,
@@ -101,7 +105,6 @@ import { ListSessionsDashboardComponent } from './features/sessions/list-session
     MatSelectModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
