@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Formation } from 'src/app/models/formation';
 import { Session } from 'src/app/models/Session';
 import { FormationHttpService } from 'src/app/services/formation-http.service';
@@ -12,29 +13,25 @@ import { SessionHttpService } from 'src/app/services/session-http.service';
 export class ListSessionsDashboardComponent implements OnInit {
 
   sessions: Session[];
-  tableColumns: string[] = ['formation', 'dateDebut', 'dateFin', 'lieu', 'prix'];
-  idFormation:number;
-  formations:Formation[];
+  tableColumns: string[] = ['formation', 'dateDebut', 'dateFin', 'lieu', 'prix', 'supprimer'];
+  
 
-  constructor(private sessionService:SessionHttpService,
-              private formationService:FormationHttpService) { }
+  constructor(private sessionService: SessionHttpService) { }
 
   ngOnInit(): void {
-    this.loadData();
+    this.loadSessions();
   }
 
-  loadData() {
+  loadSessions() {
     this.sessionService.findAll().subscribe(res => {
       this.sessions = res;
     });
   }
+ 
 
-  loadFormations(sessions:Session[]) {
-    sessions.map(item => {
-      this.formationService.findById(item.id).subscribe(res => {
-        this.formations.push(res);
-      })
-    });
+  deleteSession(id:number) {
+    this.sessionService.deleteById(id).subscribe();   
+    this.sessions = this.sessions.filter(item => item.id != id);
   }
 
 }

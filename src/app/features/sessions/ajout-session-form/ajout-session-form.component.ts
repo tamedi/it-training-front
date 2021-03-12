@@ -48,8 +48,6 @@ export class AjoutSessionFormComponent implements OnInit {
       this.creationSeesionForm.value.lieu,
       this.formationSelected
     );
-    console.log(this.sessionNew)
-
     this.sessionService.save(this.sessionNew).subscribe();
   }
 

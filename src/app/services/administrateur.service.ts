@@ -35,16 +35,4 @@ export class AdministrateurService {
     return this.httpClient.delete(`${this.baseUrl}/${id}`);
   }
 
-  delete(administrateur: Administrateur){
-
-    const options = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json',
-      }),
-      body: administrateur,
-    };
-
-    return this.httpClient.delete(`${this.baseUrl}`, options);
-  }
-
 }

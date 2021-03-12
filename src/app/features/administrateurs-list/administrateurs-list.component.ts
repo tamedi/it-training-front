@@ -10,10 +10,9 @@ import { AdministrateurService } from 'src/app/services/administrateur.service';
 export class AdministrateursListComponent implements OnInit {
 
   administrateurs: Administrateur[];
+  tableColumns: string[] = ['nom', 'prenom', 'email', 'telephone', 'supprimer'];
 
   constructor(private administrateurService: AdministrateurService) { }
-
-  tableColumns: string[] = ['nom', 'prenom', 'email', 'telephone', 'supprimer'];
 
   ngOnInit(): void {
     this.loadData();
