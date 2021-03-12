@@ -10,8 +10,10 @@ import { AjoutFormationFormComponent } from './features/ajout-formation-form/ajo
 import { FormationsListComponent } from './features/formations-list/formations-list.component';
 import { CardComponent } from './features/formations/card/card.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
+import { ContactComponent } from './pages/contact/contact.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
+import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
 import { PageFormationListeComponent } from './pages/page-formation-liste/page-formation-liste.component';
 import { PageFormationComponent } from './pages/page-formation/page-formation.component';
 import { UpdateFormationComponent } from './pages/update-formation/update-formation.component';
@@ -21,6 +23,8 @@ const routes: Routes = [
   {path:"", component:AppComponent},
   {path:"formations", component:PageFormationListeComponent},
   {path:"formations/:id", component:PageFormationComponent},
+  {path:"location", component:NosCentresComponent},
+  {path:"contact", component:ContactComponent},
   {path:"login", component:LoginComponent},
   {path:"dashboard", component:DashboardComponent,
     children: [

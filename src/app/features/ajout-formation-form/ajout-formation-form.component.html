@@ -1,6 +1,9 @@
+<div class="formation-form">
+<h2>ENREGISTREMENT D'UNE FORMATION</h2>
 <div class="ajout-formation-form">
+  
   <form [formGroup]="creationFormationForm" (ngSubmit)="onCreate()">
-    <h1>Ajouter une nouvelle formation</h1>
+    
 
       <mat-form-field appearance="legacy">
         <mat-label>Titre de la formation</mat-label>
@@ -15,4 +18,6 @@
       <button mat-raised-button color="primary" type="submit">Enregistrer</button>
   </form>
 </div>
+</div>
+
 

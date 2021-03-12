@@ -1,0 +1,16 @@
+.centres{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+    
+}
+
+.centres h2{
+margin: 30px;
+}
+
+.centres img {
+    width:700px;
+   
+}

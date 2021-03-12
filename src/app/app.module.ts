@@ -41,6 +41,8 @@ import { SessionCardComponent } from './features/sessions/session-card/session-c
 import { PageFormationComponent } from './pages/page-formation/page-formation.component';
 import { ListSessionsComponent } from './features/sessions/list-sessions/list-sessions.component';
 import { FormationsListComponent } from './features/formations-list/formations-list.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
 
 
 @NgModule({
@@ -72,7 +74,9 @@ import { FormationsListComponent } from './features/formations-list/formations-l
     ListeDesThemesComponent,
     PageFormationComponent,
     ListSessionsComponent,
-    FormationsListComponent
+    FormationsListComponent,
+    ContactComponent,
+    NosCentresComponent
   ],
   imports: [
     BrowserModule,
