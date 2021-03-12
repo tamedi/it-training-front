@@ -30,7 +30,7 @@ export class ListSessionsDashboardComponent implements OnInit {
  
 
   deleteSession(id:number) {
-    this.sessionService.deleteById(id).subscribe();   
+    this.sessionService.deleteById(id).subscribe(res => console.log(res));   
     this.sessions = this.sessions.filter(item => item.id != id);
   }
 
