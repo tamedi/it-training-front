@@ -14,7 +14,7 @@
     <span class="material-icons"> school </span>
     <button mat-button [matMenuTriggerFor]="formations" class="menu-item"> Formations</button>
     <mat-menu #formations="matMenu">
-      <button mat-menu-item>Liste des formations</button>
+      <button mat-menu-item [routerLink]="'formations'">Liste des formations</button>
       <button mat-menu-item [routerLink]="'ajoutFormation'">Ajouter Formation</button>
       <button mat-menu-item [routerLink]="'modifierFormation'">Modifier Formation</button>
       <button mat-menu-item>Supprimer Formation</button>

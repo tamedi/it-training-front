@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AdministrateursListComponent } from './features/administrateurs-list/administrateurs-list.component';
 import { AjoutAdministrateurFormComponent } from './features/ajout-administrateur-form/ajout-administrateur-form.component';
 import { AjoutFormationFormComponent } from './features/ajout-formation-form/ajout-formation-form.component';
+import { FormationsListComponent } from './features/formations-list/formations-list.component';
 import { CardComponent } from './features/formations/card/card.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
     children: [
       {path: "ajoutFormation",component:AjoutFormationFormComponent},
       {path: "modifierFormation", component:UpdateFormationComponent},
+      {path: "formations", component:FormationsListComponent},
       {path: "admin-creation", component:AjoutAdministrateurFormComponent},
       {path: "administrateurs", component:AdministrateursListComponent}
   ]}

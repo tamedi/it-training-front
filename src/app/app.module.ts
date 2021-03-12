@@ -40,6 +40,7 @@ import {MatTableModule} from '@angular/material/table';
 import { SessionCardComponent } from './features/sessions/session-card/session-card.component';
 import { PageFormationComponent } from './pages/page-formation/page-formation.component';
 import { ListSessionsComponent } from './features/sessions/list-sessions/list-sessions.component';
+import { FormationsListComponent } from './features/formations-list/formations-list.component';
 
 
 @NgModule({
@@ -70,7 +71,8 @@ import { ListSessionsComponent } from './features/sessions/list-sessions/list-se
     FormationByIdComponent,
     ListeDesThemesComponent,
     PageFormationComponent,
-    ListSessionsComponent
+    ListSessionsComponent,
+    FormationsListComponent
   ],
   imports: [
     BrowserModule,
