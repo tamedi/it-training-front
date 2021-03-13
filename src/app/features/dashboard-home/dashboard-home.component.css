@@ -2,19 +2,20 @@
     padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 #admin-profile {
-    width: 30%;
-    height: 600px;
+    width: 80%;
     margin: auto;
 }
 
 #infos {
     display: flex;
-    width: 60%;
-    height: 110px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
 }
 
 .card-admin div,

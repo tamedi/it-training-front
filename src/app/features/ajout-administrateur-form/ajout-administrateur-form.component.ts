@@ -21,8 +21,7 @@ export class AjoutAdministrateurFormComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private administrateurService: AdministrateurService,
-    public dialog: MatDialog,
-    private route: Router) {
+    public dialog: MatDialog) {
     this.creationAdminForm = this.fb.group({
       nom: [''],
       prenom: [''],

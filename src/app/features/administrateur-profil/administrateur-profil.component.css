@@ -1,23 +1,33 @@
 .admin-card {
     height: auto;
-    width: 80%;
-    background-color: cadetblue;
+    width: 66%;
+    display: flex;
+    margin: auto;
 }
 
 .admin-card .header {
-    background-image: url('../../../assets/formation-images/bg.webp');
-    background-repeat: no-repeat;
     height: 20%;
+    background-color: cadetblue;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 100%;
     padding: 10px 0;
+    width: 30%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
 }
 
 .admin-card .body {
+    width: 70%;
     text-align: center;
-    padding: 30px;
+    background-color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 
 .admin-card .nom-prenom {
