@@ -48,6 +48,7 @@ import { DialogSuppressionElementComponent } from './features/dialog-suppression
 import { DialogConfirmationAjoutComponent } from './features/dialog-confirmation-ajout/dialog-confirmation-ajout.component';
 import { DashboardHomeComponent } from './features/dashboard-home/dashboard-home.component';
 import { HeaderDashboardComponent } from './commons/header-dashboard/header-dashboard.component';
+import { AdministrateurProfilComponent } from './features/administrateur-profil/administrateur-profil.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { HeaderDashboardComponent } from './commons/header-dashboard/header-dash
     DialogSuppressionElementComponent,
     DialogConfirmationAjoutComponent,
     DashboardHomeComponent,
-    HeaderDashboardComponent
+    HeaderDashboardComponent,
+    AdministrateurProfilComponent
   ],
   imports: [
     BrowserModule,

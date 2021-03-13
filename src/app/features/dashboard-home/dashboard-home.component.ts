@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { AdministrateurService } from 'src/app/services/administrateur.service';
 import { FormationHttpService } from 'src/app/services/formation-http.service';
 import { SessionHttpService } from 'src/app/services/session-http.service';
@@ -14,6 +14,8 @@ export class DashboardHomeComponent implements OnInit {
   nombreFormations:number;
   nombreSessions:number;
 
+  @Input() adminID: number;
+
   constructor(private adminService: AdministrateurService,
                 private formationService: FormationHttpService,
                 private sessionService: SessionHttpService) { }
@@ -22,6 +24,7 @@ export class DashboardHomeComponent implements OnInit {
       this.getAdmin();
       this.getFormations();
       this.getSessions();
+      console.log("debug admin id " + this.adminID)
   }
 
   getAdmin() {

@@ -1,0 +1,41 @@
+.admin-card {
+    height: auto;
+    width: 80%;
+    background-color: cadetblue;
+}
+
+.admin-card .header {
+    background-image: url('../../../assets/formation-images/bg.webp');
+    background-repeat: no-repeat;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.admin-card .body {
+    text-align: center;
+    padding: 30px;
+}
+
+.admin-card .nom-prenom {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 100%;
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.admin-card .header .prenom {
+    height: 20px;
+    margin: 0;
+}

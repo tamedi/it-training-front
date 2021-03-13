@@ -19,7 +19,7 @@ import { UpdateFormationComponent } from './pages/update-formation/update-format
 const routes: Routes = [
   // {path: "search/:keyword", component:PageFormationListeComponent},
   {path:"login", component:LoginComponent},
-  {path:"dashboard", component:DashboardComponent,
+  {path:"dashboard/:id", component:DashboardComponent,
     children: [
       {path: "", redirectTo: "home", pathMatch: 'full'},
       {path: "home", component:DashboardHomeComponent},
