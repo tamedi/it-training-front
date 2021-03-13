@@ -14,6 +14,7 @@ import { AuthentificationApprenantHttpService } from 'src/app/services/authentif
 export class AuthentificationApprenantComponent implements OnInit {
 
  
+  
   formGroup: FormGroup;
   
 
@@ -39,14 +40,19 @@ export class AuthentificationApprenantComponent implements OnInit {
       .authentification(this.formGroup.value)
       .subscribe(res=>{
         if(res.isAuth == true){
+          
           console.log(res)
           alert(res.message)
+          
         }else{
           alert(res.message)
         }
+        this.router.navigate(['formations'])
       })
     }
     
   }
+
+  
   
 }

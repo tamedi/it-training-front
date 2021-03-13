@@ -24,6 +24,7 @@ export class CardComponent implements OnInit {
   }
 
   
+  
   formationById(id:number){
     this.router.navigate(['formations', id])
   }
