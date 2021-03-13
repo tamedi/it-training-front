@@ -1,0 +1,40 @@
+.dashboard-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-admin div,
+.card-formations div,
+.card-sessions div{
+    margin-right: 10px;
+}
+
+.card-admin,
+.card-formations,
+.card-sessions{
+    width: 15%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.nombre{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.card-admin {
+    background-color: #0094C2;
+}
+
+.card-formations {
+    background-color: #C15674;
+}
+
+.card-sessions {
+    background-color: #ABDCBE;
+}

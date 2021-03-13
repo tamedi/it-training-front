@@ -7,6 +7,8 @@
 #dashboard-container .titre {
   padding: 20px 0 0 20px;
   display: flex;
+  text-decoration: none;
+  color: white;
 }
 
 #sidenav-dashboard {

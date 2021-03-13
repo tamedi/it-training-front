@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { AdministrateursListComponent } from './features/administrateurs-list/administrateurs-list.component';
 import { AjoutAdministrateurFormComponent } from './features/ajout-administrateur-form/ajout-administrateur-form.component';
 import { AjoutFormationFormComponent } from './features/ajout-formation-form/ajout-formation-form.component';
+import { DashboardHomeComponent } from './features/dashboard-home/dashboard-home.component';
 import { CardComponent } from './features/formations/card/card.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
 import { AjoutSessionFormComponent } from './features/sessions/ajout-session-form/ajout-session-form.component';
@@ -20,6 +21,8 @@ const routes: Routes = [
   {path:"login", component:LoginComponent},
   {path:"dashboard", component:DashboardComponent,
     children: [
+      {path: "", redirectTo: "home", pathMatch: 'full'},
+      {path: "home", component:DashboardHomeComponent},
       {path: "ajoutSession", component:AjoutSessionFormComponent}, 
       {path: "listeSessions", component:ListSessionsDashboardComponent},
       {path: "ajoutFormation",component:AjoutFormationFormComponent},

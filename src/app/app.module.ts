@@ -46,6 +46,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { ListSessionsDashboardComponent } from './features/sessions/list-sessions-dashboard/list-sessions-dashboard.component';
 import { DialogSuppressionElementComponent } from './features/dialog-suppression-element/dialog-suppression-element.component';
 import { DialogConfirmationAjoutComponent } from './features/dialog-confirmation-ajout/dialog-confirmation-ajout.component';
+import { DashboardHomeComponent } from './features/dashboard-home/dashboard-home.component';
+import { HeaderDashboardComponent } from './commons/header-dashboard/header-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +84,9 @@ import { DialogConfirmationAjoutComponent } from './features/dialog-confirmation
     AjoutSessionFormComponent,
     ListSessionsDashboardComponent,
     DialogSuppressionElementComponent,
-    DialogConfirmationAjoutComponent
+    DialogConfirmationAjoutComponent,
+    DashboardHomeComponent,
+    HeaderDashboardComponent
   ],
   imports: [
     BrowserModule,
