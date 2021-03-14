@@ -9,6 +9,7 @@ import { AjoutAdministrateurFormComponent } from './features/ajout-administrateu
 import { AjoutFormationFormComponent } from './features/ajout-formation-form/ajout-formation-form.component';
 import { CardComponent } from './features/formations/card/card.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
+import { BouttonComponent } from './features/tests/boutton/boutton.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PageAuthentificationApprenantComponent } from './pages/page-authentification-apprenant/page-authentification-apprenant.component';
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path:"apprenant",component:PageFormulaireInscriptionApprenantComponent},
   {path:"apprenant/:id",component:PageCompteApprenantComponent},
   {path:"authentification",component:PageAuthentificationApprenantComponent},
+  {path:"boutton", component:BouttonComponent},
   {path:"dashboard", component:DashboardComponent,
     children: [
       {path: "ajoutFormation",component:AjoutFormationFormComponent},

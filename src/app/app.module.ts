@@ -49,6 +49,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { PageAuthentificationApprenantComponent } from './pages/page-authentification-apprenant/page-authentification-apprenant.component';
 import { CompteApprenantComponent } from './features/compte-apprenant/compte-apprenant.component';
 import { PageCompteApprenantComponent } from './pages/page-compte-apprenant/page-compte-apprenant.component';
+import { BouttonComponent } from './features/tests/boutton/boutton.component';
+import { DialogComponent } from './features/tests/dialog/dialog.component';
+
 
 
 
@@ -90,7 +93,9 @@ import { PageCompteApprenantComponent } from './pages/page-compte-apprenant/page
     PageFormulaireInscriptionApprenantComponent,
     PageAuthentificationApprenantComponent,
     CompteApprenantComponent,
-    PageCompteApprenantComponent
+    PageCompteApprenantComponent,
+    BouttonComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
