@@ -1,17 +1,22 @@
 .body-footer {
     width: 100%;
-    background-color: #696D72;
-    display: flex;
-    /* position: absolute; */
+    background-color: #363C40;
     position: relative;
     bottom: 0;
     justify-content: space-between;
     padding: 10px 50px;
 }
 
+.body-footer footer {
+    width: 70%;
+    display: flex;
+    margin: auto;
+}
+
 .body-footer .part {
     width: 25%;
     padding-left: 40px;
+    font-weight: 500;
 }
 
 .body-footer .part h3 {
@@ -38,5 +43,5 @@
 .body-footer .footer-service,
 .body-footer .footer-adresse,
 .body-footer .footer-horaires {
-    border-right: 1px solid #363C40;
+    border-right: 1px dotted white;
 }
