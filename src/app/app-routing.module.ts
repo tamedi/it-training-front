@@ -24,7 +24,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
 
 import { PageFormationComponent } from './pages/page-formation/page-formation.component';
-import { UpdateFormationComponent } from './pages/update-formation/update-formation.component';
+
 
 const routes: Routes = [
   // {path: "search/:keyword", component:PageFormationListeComponent},
@@ -41,7 +41,7 @@ const routes: Routes = [
   {path:"dashboard", component:DashboardComponent,
     children: [
       {path: "ajoutFormation",component:AjoutFormationFormComponent},
-      {path: "modifierFormation", component:UpdateFormationComponent},
+     
       {path: "formations", component:FormationsListComponent},
       {path: "admin-creation", component:AjoutAdministrateurFormComponent},
       {path: "administrateurs", component:AdministrateursListComponent}
