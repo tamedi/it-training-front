@@ -1,3 +1,5 @@
-.formation-liste{
-   margin: 60px;
+.formation-card{
+   display: block;
+   width: 60%;
+   margin-right: 0px!important;
 }

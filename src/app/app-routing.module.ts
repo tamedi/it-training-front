@@ -21,7 +21,6 @@ import { PageFormulaireInscriptionApprenantComponent } from './pages/page-formul
 
 
 import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
-
 import { PageFormationComponent } from './pages/page-formation/page-formation.component';
 import { BouttonComponent } from './features/tests/boutton/boutton.component';
 
@@ -35,11 +34,11 @@ const routes: Routes = [
   {path:"formations/:id", component:PageFormationComponent},
   {path:"location", component:NosCentresComponent},
   {path:"contact", component:ContactComponent},
-  {path:"login", component:LoginComponent},
   {path:"apprenant",component:PageFormulaireInscriptionApprenantComponent},
   {path:"apprenant/:id",component:PageCompteApprenantComponent},
   {path:"authentification",component:PageAuthentificationApprenantComponent},
   {path:"boutton", component:BouttonComponent},
+  {path:"login", component:LoginComponent},
   {path:"dashboard/:id", component:DashboardComponent,
     children: [
       {path: "", redirectTo: "home", pathMatch: 'full'},
