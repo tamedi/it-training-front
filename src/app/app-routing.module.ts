@@ -8,6 +8,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { DashboardHomeComponent } from './features/dashboard-home/dashboard-home.component';
 import { AjoutSessionFormComponent } from './features/sessions/ajout-session-form/ajout-session-form.component';
 import { ListSessionsDashboardComponent } from './features/sessions/list-sessions-dashboard/list-sessions-dashboard.component';
+
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
