@@ -11,6 +11,7 @@
     align-items: center;
     width: 70%;
     margin: auto;
+    height: 120px;
 }
 
 .header .logo {
@@ -29,7 +30,7 @@
 
 .header .logo-row .icons .logo-row-item {
     display: flex;
-    width: 22%;
+    margin-left: 25px;
     font-weight: 600;
     align-items: center;
     justify-content: flex-end;

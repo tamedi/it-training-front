@@ -13,19 +13,17 @@ export class CardComponent implements OnInit {
 
   @Input()formation: Formation;
 
-  constructor(private formationHttpservice: FormationHttpService,
-              private primengConfig: PrimeNGConfig,
+  constructor(private primengConfig: PrimeNGConfig,
               private router : Router
     ) { }
 
   ngOnInit(): void {
     this.primengConfig.ripple = true;
-
   }
 
   
   formationById(){
-    this.router.navigate(['formations',this.formation.formationId])
+    this.router.navigate(['formations',this.formation.id])
   }
 
   

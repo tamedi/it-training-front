@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { error } from 'selenium-webdriver';
 import { Apprenant } from 'src/app/models/Apprenant';
 import { ApprenantHttpService } from 'src/app/services/apprenant-http.service';
@@ -16,7 +16,8 @@ export class CompteApprenantComponent implements OnInit {
   id:number;
   
   constructor(private apprenantHttpService: ApprenantHttpService,
-              private route: ActivatedRoute) { }
+              private route: ActivatedRoute,
+              private router: Router) { }
 
 
   
@@ -33,6 +34,10 @@ export class CompteApprenantComponent implements OnInit {
     // this.apprenant = localStorage.getItem('Apprenants')
     // JSON.parse(this.apprenant)
     
+  }
+  deConnexion(){
+    localStorage.removeItem("user")
+    this.router.navigate(['authentification'])
   }
 
 

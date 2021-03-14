@@ -1,8 +1,7 @@
     .formation-page {
         display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
+        width: 70%;
+        margin: auto;
     }
     .formation-page {
         min-height: 603px;
