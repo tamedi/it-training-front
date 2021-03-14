@@ -22,12 +22,6 @@ export class AdministrateursListComponent implements OnInit {
     this.loadData();
   }
 
-<<<<<<< HEAD
-  deleteAdmin(administrateur: Administrateur) {
-      this.administrateurService.delete(administrateur).subscribe();
-      window.location.reload();
-    
-=======
   loadData() {
     this.administrateurService.getAll().subscribe(res => {
     this.administrateurs = res;
@@ -43,7 +37,6 @@ export class AdministrateursListComponent implements OnInit {
         this.administrateurs = this.administrateurs.filter(item => item.id != id);
        }
     });
->>>>>>> fatima
   }
 
 }
