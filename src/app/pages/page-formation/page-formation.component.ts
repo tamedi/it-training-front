@@ -14,8 +14,6 @@ import { SessionHttpService } from 'src/app/services/session-http.service';
 })
 export class PageFormationComponent implements OnInit {
 
-  @Input() idFormation: number
-
   id: number;
   formation: Formation;
   sessions: Session[];
