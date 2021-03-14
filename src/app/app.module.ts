@@ -33,7 +33,6 @@ import { ListeDesThemesComponent } from './features/themes/liste-des-themes/list
 import { BarreRechercheFormationComponent } from './features/formations/barre-recherche-formation/barre-recherche-formation.component';
 
 import { SearchBarComponent } from './features/search-bar/search-bar.component';
-import { UpdateFormationComponent } from './pages/update-formation/update-formation.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AjoutAdministrateurFormComponent } from './features/ajout-administrateur-form/ajout-administrateur-form.component';
 import { AdministrateursListComponent } from './features/administrateurs-list/administrateurs-list.component';
@@ -73,7 +72,6 @@ import { AdministrateurProfilComponent } from './features/administrateur-profil/
     NavigationDashboardComponent,
     AjoutFormationFormComponent,
     SearchBarComponent,
-    UpdateFormationComponent,
     AjoutAdministrateurFormComponent,
     AdministrateursListComponent,
     PageFormationListeComponent,

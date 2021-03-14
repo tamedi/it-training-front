@@ -25,7 +25,7 @@ export class AdministrateursListComponent implements OnInit {
   loadData() {
     this.administrateurService.getAll().subscribe(res => {
     this.administrateurs = res;
-    })
+    });
   }  
 
   deleteAdmin(id: number) {
