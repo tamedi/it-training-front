@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, NavigationStart, RouterEvent, NavigationEnd } from '@angular/router';
+import { Router, NavigationStart } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +20,7 @@ export class AppComponent {
         } else {
           this.showHeader = true;
         }
-      }
+      } 
     });
   }
 

@@ -1,0 +1,42 @@
+<div fxLayoutAlign="center center" fxFlexFill>
+    <form class="example-form" [formGroup]="apprenantProfile" (ngSubmit)="onSubmit()">
+        <mat-card>
+             <mat-form-field class="example-full-width">
+                <mat-label>Nom:</mat-label>
+                <input matInput placeholder="Nom"  formControlName="nom">
+              </mat-form-field>
+              
+              <mat-form-field class="example-full-width">
+                <mat-label>Prenom:</mat-label>
+                <input matInput placeholder="Prenom" formControlName="prenom">
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width">
+                <mat-label>Adresse:</mat-label>
+                <input matInput formControlName="adresse">
+              </mat-form-field>
+        
+              <mat-form-field class="example-full-width">
+              
+                <mat-label>Numero de tel:</mat-label>
+                <input matInput placeholder="Placeholder" formControlName="tel">
+              </mat-form-field>
+        
+              <mat-form-field class="example-full-width">
+                <mat-label>Adresse mail::</mat-label>
+                <input matInput formControlName="email">
+              </mat-form-field>
+        
+              <mat-form-field class="example-full-width">
+                <mat-label>Mot de passe:</mat-label>
+                <input matInput formControlName="password" type="password">
+              </mat-form-field>
+          
+              <button mat-raised-button class="example-full-width" type="submit">Inscription</button>
+
+        </mat-card>
+        
+      </form>
+   </div>
+  
+  

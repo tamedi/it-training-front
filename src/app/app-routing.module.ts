@@ -11,9 +11,19 @@ import { ListSessionsDashboardComponent } from './features/sessions/list-session
 import { ContactComponent } from './pages/contact/contact.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
-import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
+import { PageAuthentificationApprenantComponent } from './pages/page-authentification-apprenant/page-authentification-apprenant.component';
+import { PageCompteApprenantComponent } from './pages/page-compte-apprenant/page-compte-apprenant.component';
+
 import { PageFormationListeComponent } from './pages/page-formation-liste/page-formation-liste.component';
+import { PageFormulaireInscriptionApprenantComponent } from './pages/page-formulaire-inscription-apprenant/page-formulaire-inscription-apprenant.component';
+
+
+
+import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
+
 import { PageFormationComponent } from './pages/page-formation/page-formation.component';
+import { BouttonComponent } from './features/tests/boutton/boutton.component';
+
 
 const routes: Routes = [
   // {path: "search/:keyword", component:PageFormationListeComponent},
@@ -23,7 +33,11 @@ const routes: Routes = [
   {path:"location", component:NosCentresComponent},
   {path:"contact", component:ContactComponent},
   {path:"login", component:LoginComponent},
-  {path:"dashboard/:id", component:DashboardComponent,
+  {path:"apprenant",component:PageFormulaireInscriptionApprenantComponent},
+  {path:"apprenant/:id",component:PageCompteApprenantComponent},
+  {path:"authentification",component:PageAuthentificationApprenantComponent},
+  {path:"boutton", component:BouttonComponent},
+  {path:"dashboard", component:DashboardComponent,
     children: [
       {path: "", redirectTo: "home", pathMatch: 'full'},
       {path: "home", component:DashboardHomeComponent},
