@@ -5,6 +5,7 @@ import { AdministrateursListComponent } from './features/administrateurs-list/ad
 import { AjoutAdministrateurFormComponent } from './features/ajout-administrateur-form/ajout-administrateur-form.component';
 import { AjoutFormationFormComponent } from './features/ajout-formation-form/ajout-formation-form.component';
 import { DashboardHomeComponent } from './features/dashboard-home/dashboard-home.component';
+import { FormationsListComponent } from './features/formations-list/formations-list.component';
 import { AjoutSessionFormComponent } from './features/sessions/ajout-session-form/ajout-session-form.component';
 import { ListSessionsDashboardComponent } from './features/sessions/list-sessions-dashboard/list-sessions-dashboard.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -29,6 +30,7 @@ const routes: Routes = [
       {path: "ajoutSession", component:AjoutSessionFormComponent}, 
       {path: "listeSessions", component:ListSessionsDashboardComponent},
       {path: "ajoutFormation",component:AjoutFormationFormComponent},
+      {path: "formations",component:FormationsListComponent},
       {path: "admin-creation", component:AjoutAdministrateurFormComponent},
       {path: "administrateurs", component:AdministrateursListComponent}
   ]},

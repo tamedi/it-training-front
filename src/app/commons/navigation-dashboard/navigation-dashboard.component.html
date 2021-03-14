@@ -4,8 +4,8 @@
     <button mat-button [matMenuTriggerFor]="themes" class="menu-item"> Thèmes</button>
     <mat-menu #themes="matMenu">
       <button mat-menu-item>Liste des thèmes</button>
-      <button mat-menu-item [routerLink]="'ajoutFormation'">Ajouter Thème</button>
-      <button mat-menu-item [routerLink]="'modifierFormation'">Modifier Thème</button>
+      <button mat-menu-item>Ajouter Thème</button>
+      <button mat-menu-item>Modifier Thème</button>
       <button mat-menu-item>Supprimer Thème</button>
     </mat-menu>
   </div>
@@ -16,7 +16,7 @@
     <mat-menu #formations="matMenu">
       <button mat-menu-item [routerLink]="'formations'">Liste des formations</button>
       <button mat-menu-item [routerLink]="'ajoutFormation'">Ajouter Formation</button>
-      <button mat-menu-item [routerLink]="'modifierFormation'">Modifier Formation</button>
+      <button mat-menu-item>Modifier Formation</button>
       <button mat-menu-item>Supprimer Formation</button>
     </mat-menu>
   </div>
