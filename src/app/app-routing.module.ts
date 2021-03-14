@@ -37,7 +37,7 @@ const routes: Routes = [
   {path:"apprenant/:id",component:PageCompteApprenantComponent},
   {path:"authentification",component:PageAuthentificationApprenantComponent},
   {path:"boutton", component:BouttonComponent},
-  {path:"dashboard", component:DashboardComponent,
+  {path:"dashboard/:id", component:DashboardComponent,
     children: [
       {path: "", redirectTo: "home", pathMatch: 'full'},
       {path: "home", component:DashboardHomeComponent},
