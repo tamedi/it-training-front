@@ -1,4 +1,4 @@
-.administrateurs-liste {
+.sessions-liste {
     width: 60%;
     margin: auto;
     margin-top: 20px;
@@ -8,7 +8,7 @@
     border-width: 3px;
 }
 
-.administrateurs-liste h2 {
+.sessions-liste h2 {
     text-align: center;
     margin-top: 20px;
     margin-top: 0;
@@ -17,18 +17,18 @@
     padding: 3px 0;
 }
 
-.administrateurs-liste table {
+.sessions-liste table {
     width: 100%;
 }
 
-.administrateurs-liste table th {
+.sessions-liste table th {
     font-size: 18px;
     background-color: #5DA0A2;
     padding: 10px;
     text-align: center;
 }
 
-.administrateurs-liste table tr td {
+.sessions-liste table tr td {
     padding: 10px;
     color: black;
     text-align: center;
@@ -36,15 +36,15 @@
     border-right: 1px dotted gray;
 }
 
-.administrateurs-liste  table tr:nth-child(odd) td{
+.sessions-liste  table tr:nth-child(odd) td{
     background-color: #E4E4E4;
 }
 
-.administrateurs-liste  table tr:nth-child(even) td{
+.sessions-liste  table tr:nth-child(even) td{
     background-color: #D0D0D0;
 }
 
-.administrateurs-liste table td button {
+.sessions-liste table td button {
     background-color:  #5DA0A2;
     display: block;
     margin: auto;

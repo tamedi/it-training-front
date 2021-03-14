@@ -1,0 +1,51 @@
+.admin-card {
+    height: auto;
+    width: 66%;
+    display: flex;
+    margin: auto;
+}
+
+.admin-card .header {
+    height: 20%;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 0;
+    width: 30%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.admin-card .body {
+    width: 70%;
+    text-align: center;
+    background-color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.admin-card .nom-prenom {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 100%;
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.admin-card .header .prenom {
+    height: 20px;
+    margin: 0;
+}

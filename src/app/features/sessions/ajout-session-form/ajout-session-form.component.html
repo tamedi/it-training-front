@@ -1,0 +1,38 @@
+<div class="creation-session-form">
+    <form [formGroup]="creationSeesionForm" (ngSubmit)="onCreate()">
+        <h1>Création d'une nouvelle session</h1>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Formation</mat-label>
+            <mat-select (selectionChange)="updateValueFormation($event)" formControlName="formation">
+                <mat-option *ngFor="let formationOption of formationsList" 
+                    [value]="formationOption">
+                    {{formationOption.titre}}
+                </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Date de début</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="dateDebut">
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Date de fin</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="dateFin">
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Prix</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="prix">
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Lieu</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="lieu">
+        </mat-form-field>
+
+        <button mat-raised-button type="submit">Enregistrer</button>
+
+    </form>
+</div>

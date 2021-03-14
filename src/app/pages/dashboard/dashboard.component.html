@@ -1,16 +1,17 @@
+<app-header-dashboard></app-header-dashboard>
 <mat-drawer-container id="dashboard-container">
-    <mat-drawer mode="side" opened id="sidenav-dashboard">
-      <div class="titre">
-        <span class="material-icons">
-          dashboard
-          </span>
-        <h1>Tableau de bord</h1>
-      </div>
-        <app-navigation-dashboard></app-navigation-dashboard>
-    </mat-drawer>
-    
-    <mat-drawer-content>
-      <router-outlet></router-outlet>
-    </mat-drawer-content>
-  </mat-drawer-container>
+  <mat-drawer mode="side" opened id="sidenav-dashboard">
 
+      <a class="titre" [routerLink]="['/dashboard/', adminID]" routerLinkActive="router-link-active"><span class="material-icons">
+          dashboard
+        </span>
+        <h1>Tableau de bord</h1>
+      </a>
+
+    <app-navigation-dashboard></app-navigation-dashboard>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

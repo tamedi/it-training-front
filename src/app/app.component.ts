@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { Router, NavigationStart } from '@angular/router';
+=======
+import { Router, NavigationStart, RouterEvent, NavigationEnd } from '@angular/router';
+>>>>>>> fatima
 
 @Component({
   selector: 'app-root',
@@ -10,7 +14,11 @@ export class AppComponent {
   title = 'it-training-front';
   showHeader: boolean;
 
+<<<<<<< HEAD
   constructor(private router: Router) { };
+=======
+  constructor(private router: Router) {}
+>>>>>>> fatima
 
   ngOnInit() {
     this.router.events.subscribe((event: any) => {
@@ -20,7 +28,15 @@ export class AppComponent {
         } else {
           this.showHeader = true;
         }
+<<<<<<< HEAD
       }
     });
   }
+=======
+      } 
+    });
+  }
+
+
+>>>>>>> fatima
 }

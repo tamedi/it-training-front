@@ -1,0 +1,14 @@
+<div class="admin-card">
+    <div class="header">
+        <div class="nom-prenom">
+            <div class="prenom"> {{ administrateur.prenom }} </div>
+            <div class="nom"> {{ administrateur.nom | uppercase}} </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <p>Téléphone : {{ administrateur.telephone }}</p>
+        <p>Email : {{ administrateur.email }}</p>
+
+    </div>
+</div>

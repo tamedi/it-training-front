@@ -1,0 +1,19 @@
+.creation-session-form {
+    width: 45%;
+    margin:auto;    
+}
+
+.creation-session-form h1 {
+    color:bisque;
+    text-align: center;
+    margin-top: 20px;    
+}
+
+.creation-session-form form {
+    display: flex;
+    flex-direction: column;    
+}
+
+.creation-session-form button {
+    background-color: #5DA0A2;    
+}

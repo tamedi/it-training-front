@@ -1,0 +1,26 @@
+.header-dashboard {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    background-color: black;
+    height: 40px;
+    color: #E4E4E4;
+    align-items: center;
+}
+
+.header-dashboard .nom-admin {
+    margin-left: 25px; 
+}
+
+.header-dashboard .deconnexion {
+    margin-right: 30px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.header-dashboard .deconnexion a {
+    color: white;
+    padding-top: 5px;
+}

@@ -12,7 +12,7 @@ export class Administrateur {
     get nom() { return this._nom }
     get prenom() { return this._prenom }
     get email() { return this._email }
-    get telepohone() { return this._telephone }
+    get telephone() { return this._telephone }
     get password() { return this._password }
 
     set id(id:number) { this._id = id }
