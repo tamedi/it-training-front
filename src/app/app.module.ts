@@ -58,6 +58,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,6 +1,6 @@
 <div class="administrateurs-liste">
     <h1>Liste des administrateurs</h1>
-    <table mat-table [dataSource]="administrateurs">
+    <table mat-table >
         <ng-container matColumnDef="nom">
             <th mat-header-cell *matHeaderCellDef> Nom </th>
             <td mat-cell *matCellDef="let administrateur"> {{administrateur.nom}} </td>
