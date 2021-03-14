@@ -9,3 +9,13 @@
       font-weight: bold;
       font-size:x-large;
   }
+  button{
+    background-color: #5DA0A2;
+    width: 50%;
+    margin-right: 200px;
+}
+.inscription{
+  color: cornsilk;
+  text-align: center;
+  margin-left: 120px;
+}
