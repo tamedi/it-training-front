@@ -1,0 +1,53 @@
+.formations-liste {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(37, 37, 39);
+    border-width: 3px;
+}
+
+.formations-liste h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #0B566C;
+    padding: 3px 0;
+}
+
+.formations-liste table {
+    width: 100%;
+}
+
+.formations-liste table th {
+    font-size: 20px;
+    background-color: #5DA0A2;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formations-liste table tr td {
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    border-right: 1px dotted gray;
+}
+
+.formations-liste  table tr:nth-child(odd) td{
+    background-color: #E4E4E4;
+}
+
+.formations-liste  table tr:nth-child(even) td{
+    background-color: #D0D0D0;
+}
+
+.formations-liste table td button {
+    background-color:  #5DA0A2;
+    display: block;
+    margin: auto;
+    color: #D0D0D0;
+}

@@ -5,7 +5,7 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
 
 .session-list-comp h2 {

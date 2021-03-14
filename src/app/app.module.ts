@@ -27,7 +27,6 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 
-import { PageFormationByIdComponent } from './pages/page-formation-by-id/page-formation-by-id.component';
 import { FormationByIdComponent } from './features/formations/formation-by-id/formation-by-id.component';
 import { ListeDesThemesComponent } from './features/themes/liste-des-themes/liste-des-themes.component';
 import { BarreRechercheFormationComponent } from './features/formations/barre-recherche-formation/barre-recherche-formation.component';
@@ -54,6 +53,9 @@ import { DialogComponent } from './features/tests/dialog/dialog.component';
 
 
 
+import { FormationsListComponent } from './features/formations-list/formations-list.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
 
 
 @NgModule({
@@ -68,12 +70,10 @@ import { DialogComponent } from './features/tests/dialog/dialog.component';
     CardComponent,
     ListeComponent,
     PageFormationListeComponent,  
-    PageFormationByIdComponent,
     FormationByIdComponent,
     ListeDesThemesComponent,
     BarreRechercheFormationComponent,
     PageFormationListeComponent, 
-    PageFormationByIdComponent,  
     FormationByIdComponent,   
     ListeDesThemesComponent,
     NavigationDashboardComponent,
@@ -83,7 +83,6 @@ import { DialogComponent } from './features/tests/dialog/dialog.component';
     AjoutAdministrateurFormComponent,
     AdministrateursListComponent,
     PageFormationListeComponent,
-    PageFormationByIdComponent,
     FormationByIdComponent,
     ListeDesThemesComponent,
     PageFormationComponent,
@@ -95,7 +94,10 @@ import { DialogComponent } from './features/tests/dialog/dialog.component';
     CompteApprenantComponent,
     PageCompteApprenantComponent,
     BouttonComponent,
-    DialogComponent
+    DialogComponent,
+    FormationsListComponent,
+    ContactComponent,
+    NosCentresComponent
   ],
   imports: [
     BrowserModule,

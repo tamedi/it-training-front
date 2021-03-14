@@ -22,9 +22,9 @@ export class AdministrateursListComponent implements OnInit {
   }
 
   deleteAdmin(administrateur: Administrateur) {
-      this.administrateurService.delete(administrateur).subscribe(res => {
-        console.log(res);
-    });
+      this.administrateurService.delete(administrateur).subscribe();
+      window.location.reload();
+    
   }
 
 }

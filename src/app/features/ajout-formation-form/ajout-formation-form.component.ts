@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormationNew } from 'src/app/models/FormationNew';
+import { FormationHttpService } from 'src/app/services/formation-http.service';
 
 @Component({
   selector: 'app-ajout-formation-form',
@@ -8,21 +10,33 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class AjoutFormationFormComponent implements OnInit {
 
-  formationForm: FormGroup;
+  creationFormationForm: FormGroup;
+  formationNew: FormationNew;
 
-  constructor(private fb: FormBuilder) {
-    this.formationForm = this.fb.group({
+  constructor(
+    private fb: FormBuilder,
+    private formationService: FormationHttpService) {
+    this.creationFormationForm = this.fb.group({
       titre: [''],
-      prix: [''],
-      nombreParticipants: ['']
-    });
+      description: ['']
+    })
    }
 
   ngOnInit(): void {
   }
 
   onSubmit(): void {
-    console.log(this.formationForm.value);
+  }
+
+  onCreate(): void {
+    this.formationNew = new FormationNew(
+      this.creationFormationForm.value.titre,
+      this.creationFormationForm.value.description);
+
+      this.formationService.save(this.formationNew).subscribe(res => {
+          console.log(res);
+      });
+    
   }
 
 }

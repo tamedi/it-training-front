@@ -1,11 +1,41 @@
-.ajout-formation-form form {
+
+.formation-form{
     display: flex;
     flex-direction: column;
-    width: 40%;
-    margin: auto;
+    align-items: center;
+    padding: 20px;
 }
 
 .ajout-formation-form form button {
-    width: 20%;
+    width: 50%;
     margin: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+    background-color: #5DA0A2;
+}
+
+.ajout-formation-form form button:hover {
+    background-color: #172a2b;
+}
+
+.ajout-formation-form {
+    width: 45%;
+    height: 300px;
+    padding: 10px;
+    margin:auto;
+    margin-top: 25vh;
+    border-style: groove;
+    border-width: 2px;
+    background-color: #396364;
+}
+
+.ajout-formation-form h2 {
+    color:#EEDEC9;
+    text-align: center;
+
+}
+
+.ajout-formation-form form {
+    display: flex;
+    flex-direction: column;
 }
