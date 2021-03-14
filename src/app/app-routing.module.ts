@@ -23,13 +23,14 @@ import { PageFormulaireInscriptionApprenantComponent } from './pages/page-formul
 import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
 import { PageFormationComponent } from './pages/page-formation/page-formation.component';
 import { BouttonComponent } from './features/tests/boutton/boutton.component';
+import { AccueilComponent } from './pages/accueil/accueil.component';
 
 
 
 
 const routes: Routes = [
   // {path: "search/:keyword", component:PageFormationListeComponent},
-  {path:"", component:AppComponent},
+  {path:"", component:AccueilComponent},
   {path:"formations", component:PageFormationListeComponent},
   {path:"formations/:id", component:PageFormationComponent},
   {path:"location", component:NosCentresComponent},

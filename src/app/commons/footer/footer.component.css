@@ -45,3 +45,7 @@
 .body-footer .footer-horaires {
     border-right: 1px dotted white;
 }
+
+.part {
+    color: rgb(231, 222, 222);
+}
