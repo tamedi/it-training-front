@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'it-training-front';
   showHeader: boolean;
 
-  constructor(private router: Router) { };
+  constructor(private router: Router) {}
 
   ngOnInit() {
     this.router.events.subscribe((event: any) => {
@@ -20,7 +20,9 @@ export class AppComponent {
         } else {
           this.showHeader = true;
         }
-      }
+      } 
     });
   }
+
+
 }

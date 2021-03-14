@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -32,7 +32,6 @@ import { ListeDesThemesComponent } from './features/themes/liste-des-themes/list
 import { BarreRechercheFormationComponent } from './features/formations/barre-recherche-formation/barre-recherche-formation.component';
 
 import { SearchBarComponent } from './features/search-bar/search-bar.component';
-import { UpdateFormationComponent } from './pages/update-formation/update-formation.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AjoutAdministrateurFormComponent } from './features/ajout-administrateur-form/ajout-administrateur-form.component';
 import { AdministrateursListComponent } from './features/administrateurs-list/administrateurs-list.component';
@@ -57,6 +56,14 @@ import { FormationsListComponent } from './features/formations-list/formations-l
 import { ContactComponent } from './pages/contact/contact.component';
 import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
 
+import { AjoutSessionFormComponent } from './features/sessions/ajout-session-form/ajout-session-form.component';
+import {MatSelectModule} from '@angular/material/select';
+import { ListSessionsDashboardComponent } from './features/sessions/list-sessions-dashboard/list-sessions-dashboard.component';
+import { DialogSuppressionElementComponent } from './features/dialog-suppression-element/dialog-suppression-element.component';
+import { DialogConfirmationAjoutComponent } from './features/dialog-confirmation-ajout/dialog-confirmation-ajout.component';
+import { DashboardHomeComponent } from './features/dashboard-home/dashboard-home.component';
+import { HeaderDashboardComponent } from './commons/header-dashboard/header-dashboard.component';
+import { AdministrateurProfilComponent } from './features/administrateur-profil/administrateur-profil.component';
 
 
 @NgModule({
@@ -80,7 +87,6 @@ import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
     NavigationDashboardComponent,
     AjoutFormationFormComponent,
     SearchBarComponent,
-    UpdateFormationComponent,
     AjoutAdministrateurFormComponent,
     AdministrateursListComponent,
     PageFormationListeComponent,
@@ -98,7 +104,14 @@ import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
     DialogComponent,
     FormationsListComponent,
     ContactComponent,
-    NosCentresComponent
+    NosCentresComponent,
+    AjoutSessionFormComponent,
+    ListSessionsDashboardComponent,
+    DialogSuppressionElementComponent,
+    DialogConfirmationAjoutComponent,
+    DashboardHomeComponent,
+    HeaderDashboardComponent,
+    AdministrateurProfilComponent
   ],
   imports: [
     BrowserModule,
@@ -119,10 +132,10 @@ import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
     MatDialogModule,
     MatTableModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatSelectModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

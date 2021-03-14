@@ -1,0 +1,38 @@
+<div class="dashboard-home">
+
+    <div id="admin-profile">
+        <app-administrateur-profil></app-administrateur-profil>
+    </div>
+
+    <div id="infos">
+        <div class="card-admin">
+            <div>
+                <img src="../../../assets/formation-images/group-white.svg" alt="administrateurs icon" />
+            </div>
+            <div>
+                <p class="nombre"> {{ nombreAdministrateurs }}</p>
+                <p class="text">Utilisateurs</p>
+            </div>
+
+        </div>
+        <div class="card-formations">
+            <div>
+                <img src="../../../assets/formation-images/school-white.svg" alt="administrateurs icon" />
+            </div>
+            <div>
+                <p class="nombre"> {{ nombreFormations }}</p>
+                <p class="text">Formations</p>
+            </div>
+        </div>
+
+        <div class="card-sessions">
+            <div>
+                <img src="../../../assets/formation-images/calendar.svg" alt="administrateurs icon" />
+            </div>
+            <div>
+                <p class="nombre"> {{ nombreSessions }}</p>
+                <p class="text">Sessions</p>
+            </div>
+        </div>
+    </div>
+</div>

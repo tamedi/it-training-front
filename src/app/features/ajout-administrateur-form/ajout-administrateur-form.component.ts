@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
+import { Administrateur } from 'src/app/models/Administrateur';
 import { AdministrateurNew } from 'src/app/models/AdministrateurNew';
 import { AdministrateurService } from 'src/app/services/administrateur.service';
+import { DialogConfirmationAjoutComponent } from '../dialog-confirmation-ajout/dialog-confirmation-ajout.component';
 
 @Component({
   selector: 'app-ajout-administrateur-form',
@@ -12,10 +16,12 @@ export class AjoutAdministrateurFormComponent implements OnInit {
 
   creationAdminForm: FormGroup;
   administrateurNew: AdministrateurNew;
+  administrateur:Administrateur;
 
   constructor(
     private fb: FormBuilder,
-    private administrateurService: AdministrateurService) {
+    private administrateurService: AdministrateurService,
+    public dialog: MatDialog) {
     this.creationAdminForm = this.fb.group({
       nom: [''],
       prenom: [''],
@@ -28,6 +34,7 @@ export class AjoutAdministrateurFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   onCreate(): void {
     this.administrateurNew = new AdministrateurNew(
       this.creationAdminForm.value.nom,
@@ -36,9 +43,18 @@ export class AjoutAdministrateurFormComponent implements OnInit {
       this.creationAdminForm.value.telephone,
       this.creationAdminForm.value.password);
 
+
+
       this.administrateurService.save(this.administrateurNew).subscribe(res => {
-          console.log(res);
+          this.administrateur = res;
+
+          if(this.administrateur != null) {
+            const dialogConfirm = this.dialog.open(DialogConfirmationAjoutComponent);
+            dialogConfirm.afterClosed().subscribe();
+          }
       });
+
+
     
   }
 

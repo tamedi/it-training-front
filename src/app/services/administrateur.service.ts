@@ -27,24 +27,16 @@ export class AdministrateurService {
     return this.httpClient.get<Administrateur[]>(`${this.baseUrl}`);
   }
 
+  findById(id: number): Observable<Administrateur> {
+    return this.httpClient.get<Administrateur>(`${this.baseUrl}/${id}`);
+  }
+
   update(administrateurNew:AdministrateurNew, id:number): Observable<Administrateur> {
     return this.httpClient.put<Administrateur>(`${this.baseUrl}/editer/${id}`, administrateurNew);
   }
 
   deleteById(id:number){
     return this.httpClient.delete(`${this.baseUrl}/${id}`);
-  }
-
-  delete(administrateur: Administrateur){
-
-    const options = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json',
-      }),
-      body: administrateur,
-    };
-
-    return this.httpClient.delete(`${this.baseUrl}`, options);
   }
 
 }

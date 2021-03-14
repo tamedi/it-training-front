@@ -1,6 +1,6 @@
 <div class="formations-liste">
     <h2>LISTE DES FORMATIONS</h2>
-    <table mat-table >
+    <table mat-table [dataSource]="formations">
         <ng-container matColumnDef="titre">
             <th mat-header-cell *matHeaderCellDef> TITRE </th>
             <td mat-cell *matCellDef="let formation"> {{formation.titre}} </td>
