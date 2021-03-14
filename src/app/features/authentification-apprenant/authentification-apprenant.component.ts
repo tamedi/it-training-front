@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ApprenantDemandeAuth } from 'src/app/models/ApprenantDemandeAuth';
-import { ApprenantMessageAuth } from 'src/app/models/ApprenantMessageAuth';
+
 
 import { AuthentificationApprenantHttpService } from 'src/app/services/authentification-apprenant-http.service';
-
 
 @Component({
   selector: 'app-authentification-apprenant',

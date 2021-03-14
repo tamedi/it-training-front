@@ -1,0 +1,24 @@
+<div fxLayoutAlign="center center" fxFlexFill>
+    <form class="example-form" [formGroup]="formGroup" (ngSubmit)="loginProces() " >
+        <mat-card>
+        
+              <mat-form-field class="example-full-width">
+                <mat-label>Adresse mail:</mat-label>
+                <input matInput formControlName="email">
+              </mat-form-field>
+        
+              <mat-form-field class="example-full-width">
+                <mat-label>Mot de passe:</mat-label>
+                <input matInput formControlName="password" type="password">
+              </mat-form-field>
+          
+              <button mat-raised-button class="example-full-width" type="submit"  >Connexion</button>
+              <a class="inscription" routerLink="/apprenant" >je n'ai pas de compte, je m'inscris</a>
+
+        </mat-card>
+        
+      </form>
+   </div>
+  
+  
+

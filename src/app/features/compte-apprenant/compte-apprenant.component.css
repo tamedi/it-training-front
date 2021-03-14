@@ -1,0 +1,11 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .titre{
+      background-color: #5DA0A2 ;
+      text-align: center;
+      font-weight: bold;
+      font-size:x-large;
+  }
