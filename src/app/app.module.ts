@@ -39,12 +39,10 @@ import {MatTableModule} from '@angular/material/table';
 import { SessionCardComponent } from './features/sessions/session-card/session-card.component';
 import { PageFormationComponent } from './pages/page-formation/page-formation.component';
 import { ListSessionsComponent } from './features/sessions/list-sessions/list-sessions.component';
-<<<<<<< HEAD
 import { FormationsListComponent } from './features/formations-list/formations-list.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
 
-=======
 import { AjoutSessionFormComponent } from './features/sessions/ajout-session-form/ajout-session-form.component';
 import {MatSelectModule} from '@angular/material/select';
 import { ListSessionsDashboardComponent } from './features/sessions/list-sessions-dashboard/list-sessions-dashboard.component';
@@ -53,7 +51,6 @@ import { DialogConfirmationAjoutComponent } from './features/dialog-confirmation
 import { DashboardHomeComponent } from './features/dashboard-home/dashboard-home.component';
 import { HeaderDashboardComponent } from './commons/header-dashboard/header-dashboard.component';
 import { AdministrateurProfilComponent } from './features/administrateur-profil/administrateur-profil.component';
->>>>>>> fatima
 
 @NgModule({
   declarations: [
@@ -83,11 +80,9 @@ import { AdministrateurProfilComponent } from './features/administrateur-profil/
     ListeDesThemesComponent,
     PageFormationComponent,
     ListSessionsComponent,
-<<<<<<< HEAD
     FormationsListComponent,
     ContactComponent,
-    NosCentresComponent
-=======
+    NosCentresComponent,
     AjoutSessionFormComponent,
     ListSessionsDashboardComponent,
     DialogSuppressionElementComponent,
@@ -95,7 +90,6 @@ import { AdministrateurProfilComponent } from './features/administrateur-profil/
     DashboardHomeComponent,
     HeaderDashboardComponent,
     AdministrateurProfilComponent
->>>>>>> fatima
   ],
   imports: [
     BrowserModule,
