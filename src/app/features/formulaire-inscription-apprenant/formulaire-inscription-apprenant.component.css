@@ -1,3 +1,8 @@
+.mat-card {
+background-color: #008E97;
+margin: 50px;
+}
+
 .example-form {
     min-width: 150px;
     max-width: 500px;
