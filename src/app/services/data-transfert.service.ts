@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class DataTransfertService {
 
-  private adminID = new BehaviorSubject<any>([]);
+  private adminID = new BehaviorSubject<number>(-1);
   currentInfo = this.adminID.asObservable();
 
   constructor() { }
