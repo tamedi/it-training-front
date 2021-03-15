@@ -1,5 +1,5 @@
 button{
-    background-color: #5DA0A2;
+  background-color: #5DA0A2;
     width: 100%;
 }
 .example-form {
@@ -14,4 +14,9 @@ button{
   .formulaire-apprenant{
     margin: 0 auto 0 auto;
   }
-  
+  .card-container{
+    background-color: #008E97
+  }
+  .card{
+    background-color: #008E97
+  }

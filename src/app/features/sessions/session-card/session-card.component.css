@@ -53,10 +53,11 @@ a {
 }
 
 .lien-inscription {
-    background-color: #0088BA;
+    background-color: #008E97;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    width: 100%;
 }
