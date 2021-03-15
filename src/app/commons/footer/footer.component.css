@@ -1,10 +1,10 @@
 .body-footer {
     width: 100%;
-    background-color: #008E97;
+    background-color: #434544;
     position: relative;
     bottom: 0;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 10px 0px;
 }
 
 .body-footer footer {
@@ -15,7 +15,6 @@
 
 .body-footer .part {
     width: 25%;
-    padding-left: 40px;
     font-weight: 500;
 }
 
@@ -25,25 +24,29 @@
     text-decoration: underline;
 }
 
-.body-footer .part ul li,.part p {
+.body-footer .part ul li, .part p {
     list-style: none;
     font-size: 15px;
     color: #fff;
-    
 }
 
-.body-footer .part ul li a{
+.body-footer .part ul li a {
     text-decoration: none;
-    color: rgb(204, 204, 204);
+    color: #008E97;
     font-size: 15px;
 }
 
-.body-footer .part ul li a:hover{
-    color: bisque;
+.body-footer .part ul li a:hover {
+    color: white;
 }
 
-.body-footer .footer-service,
-.body-footer .footer-adresse,
-.body-footer .footer-horaires {
-    border-right: 1px dotted white;
+.footer-reseaux {
+    display: flex;
+    width: fit-content;
+}
+
+.part-footer-reseaux img {
+    width: 40px;
+    margin-top: 20px;
+    margin-right: 5px;
 }

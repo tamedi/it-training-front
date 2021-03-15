@@ -1,12 +1,4 @@
 <div id="sidenav">
-  <div class="group-navigation">
-    <span class="material-icons"> source </span>
-    <button mat-button [matMenuTriggerFor]="themes" class="menu-item"> Thèmes</button>
-    <mat-menu #themes="matMenu">
-      <button mat-menu-item>Liste des thèmes</button>
-      <button mat-menu-item>Ajouter Thème</button>
-    </mat-menu>
-  </div>
 
   <div class="group-navigation">
     <span class="material-icons"> school </span>
@@ -14,6 +6,7 @@
     <mat-menu #formations="matMenu">
       <button mat-menu-item [routerLink]="'formations'">Liste des formations</button>
       <button mat-menu-item [routerLink]="'ajoutFormation'">Ajouter Formation</button>
+
     </mat-menu>
   </div>
 
