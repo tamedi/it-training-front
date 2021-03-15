@@ -1,7 +1,7 @@
 <div class="creation-session-form">
+    <h1>Création d'une nouvelle session</h1>
+    
     <form [formGroup]="creationSeesionForm" (ngSubmit)="onCreate()">
-        <h1>Création d'une nouvelle session</h1>
-
         <mat-form-field appearance="fill">
             <mat-label>Formation</mat-label>
             <mat-select (selectionChange)="updateValueFormation($event)" formControlName="formation">

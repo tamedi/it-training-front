@@ -1,7 +1,7 @@
 <div class="creation-admin-form">
+    <h1>Création compte administrateur</h1>
+    
     <form [formGroup]="creationAdminForm" (ngSubmit)="onCreate()">
-        <h1>Création compte administrateur</h1>
-
         <mat-form-field appearance="legacy">
             <mat-label>Nom</mat-label>
             <input matInput placeholder="Placeholder" formControlName="nom">
