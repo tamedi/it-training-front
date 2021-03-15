@@ -44,16 +44,16 @@
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding-right: 10px;
-    width: 60%;
+    width: 70%;
     height: 60px;
     margin: auto;
 }
 
 .menu .nav-item {
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .menu .nav-item a {
