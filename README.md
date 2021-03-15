@@ -20,9 +20,9 @@ des écrans, …)
 
 ## Outils requis
 
-- PC sous environnement windows avec la JDK11 ou la JRE.
-- IDE java eclipse/Spring tool suit avec le framework Spring et le module JPA.
-- Logiciel de gestion de base de données mySQL workbench
+- JDK11 ou la JRE.
+- IDE java eclipse/Spring tool suit ou IDEA
+- mySQL
 - Logiciel Git
 - Environnement de développement Visual Studio code avec Node.js
 - Navigateur web (nous conseillons Google Chrome)
