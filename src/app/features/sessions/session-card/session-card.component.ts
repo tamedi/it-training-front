@@ -17,8 +17,10 @@ export class SessionCardComponent implements OnInit {
   constructor(public dialog: MatDialog, private router:Router) { }
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogComponent, {
+      
       width: '500px',
       height:'500px'
+      
       
     });
 

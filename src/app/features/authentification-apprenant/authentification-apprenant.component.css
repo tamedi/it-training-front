@@ -11,10 +11,13 @@
     margin: 0 auto 0 auto;
   }
   button{
-      background-color: #5DA0A2;
+    background-color: #5DA0A2;
   }
   .inscription{
     color: cornsilk;
     text-align: center;
     margin-left: 120px;
+  }
+  .card{
+    background-color: #008E97
   }

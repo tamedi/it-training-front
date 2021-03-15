@@ -2,6 +2,7 @@
     min-width: 150px;
     max-width: 500px;
     width: 100%;
+    background-color: #5DA0A2;
   }
   .titre{
       background-color: #5DA0A2 ;
@@ -13,9 +14,16 @@
     background-color: #5DA0A2;
     width: 50%;
     margin-right: 200px;
+   
 }
 .inscription{
   color: cornsilk;
   text-align: center;
   margin-left: 120px;
+}
+.card{
+  background-color: #008E97;
+}
+.champs{
+  background-color: #008E97
 }

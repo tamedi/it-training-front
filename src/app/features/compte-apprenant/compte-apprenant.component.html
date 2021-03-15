@@ -1,13 +1,19 @@
+
 <div fxLayoutAlign="center center" fxFlexFill>
-    <div class="example-form">
-        <mat-card class="titre">Detail Du Profil</mat-card>
-        <mat-card>Nom:   {{apprenant.nom}}</mat-card>
-        <mat-card>Prenom:   {{apprenant.prenom}}</mat-card>
-        <mat-card>Adresse:   {{apprenant.adresse}}</mat-card>
-        <mat-card>Tel:    {{apprenant.tel}}</mat-card>
-        <mat-card>Email:    {{apprenant.email}}</mat-card>
-        <button mat-raised-button class="example-full-width" type="submit" class="inscription" (click)="deConnexion()"  >Deconnexion</button>
-    </div>
+    <mat-card class="card">
+        <div class="example-form">
+            <mat-card class="titre">Detail Du Profil</mat-card>
+            <mat-card class="champs">Nom:   {{apprenant.nom}}</mat-card>
+            <mat-card class="champs">Prenom:   {{apprenant.prenom}}</mat-card>
+            <mat-card class="champs">Adresse:   {{apprenant.adresse}}</mat-card>
+            <mat-card class="champs">Tel:    {{apprenant.tel}}</mat-card>
+            <mat-card class="champs">Email:    {{apprenant.email}}</mat-card>
+            <mat-card class="champs"><button mat-raised-button class="example-full-width" type="submit" class="inscription" (click)="deConnexion()"  >Deconnexion</button></mat-card>
+            
+        </div>
+        
+    </mat-card>
+    
     
 </div>
 
