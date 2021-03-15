@@ -29,7 +29,7 @@ des écrans, …)
 
 ## Installation du projet
 
-1. Récupérer le projet sur github, pour cela ouvrir un invité de commande et executer la ligne : "git clone <https://github.com/tamedi/it-training-front.git>" pour la partie front-end, et "git clone <https://github.com/Fatima-Rami/it-training-back.git>" pour la partie back-end.
+1. Récupérer le projet sur github, pour cela ouvrir un invité de commande et executer la ligne : "git clone <https://github.com/juprodho/it-training-front.git>" pour la partie front-end, et "git clone <https://github.com/juprodho/it-training-back.git>" pour la partie back-end.
 
 2. Executer MySQL workbench et configurer une nouvelle connexion sur le port localhost://3306, nom: root, password: root. Créer un nouveau schéma "projet". Laisser le programme ouvert.
 
