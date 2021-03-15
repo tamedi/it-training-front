@@ -14,8 +14,6 @@ export class DashboardHomeComponent implements OnInit {
   nombreFormations:number;
   nombreSessions:number;
 
-  @Input() adminID: number;
-
   constructor(private adminService: AdministrateurService,
                 private formationService: FormationHttpService,
                 private sessionService: SessionHttpService) { }
@@ -24,7 +22,6 @@ export class DashboardHomeComponent implements OnInit {
       this.getAdmin();
       this.getFormations();
       this.getSessions();
-      console.log("debug admin id " + this.adminID)
   }
 
   getAdmin() {
