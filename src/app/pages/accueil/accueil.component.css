@@ -1,0 +1,15 @@
+.acceuil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.acceuil img {
+    max-width: 300px;
+}
+
+.acceuil h1,h2 {
+    font-weight: lighter;
+    color: rgb(41, 80, 67);
+}

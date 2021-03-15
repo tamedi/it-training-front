@@ -6,6 +6,7 @@ import { AjoutAdministrateurFormComponent } from './features/ajout-administrateu
 import { AjoutFormationFormComponent } from './features/ajout-formation-form/ajout-formation-form.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DashboardHomeComponent } from './features/dashboard-home/dashboard-home.component';
+import { FormationsListComponent } from './features/formations-list/formations-list.component';
 import { AjoutSessionFormComponent } from './features/sessions/ajout-session-form/ajout-session-form.component';
 import { ListSessionsDashboardComponent } from './features/sessions/list-sessions-dashboard/list-sessions-dashboard.component';
 
@@ -22,14 +23,14 @@ import { PageFormulaireInscriptionApprenantComponent } from './pages/page-formul
 import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
 import { PageFormationComponent } from './pages/page-formation/page-formation.component';
 import { BouttonComponent } from './features/tests/boutton/boutton.component';
-import { FormationsListComponent } from './features/formations-list/formations-list.component';
+import { AccueilComponent } from './pages/accueil/accueil.component';
 
 
 
 
 const routes: Routes = [
   // {path: "search/:keyword", component:PageFormationListeComponent},
-  {path:"", component:AppComponent},
+  {path:"", component:AccueilComponent},
   {path:"formations", component:PageFormationListeComponent},
   {path:"formations/:id", component:PageFormationComponent},
   {path:"location", component:NosCentresComponent},
@@ -47,6 +48,7 @@ const routes: Routes = [
       {path: "listeSessions", component:ListSessionsDashboardComponent},
       {path: "formations", component:FormationsListComponent},
       {path: "ajoutFormation",component:AjoutFormationFormComponent},
+      {path: "formations",component:FormationsListComponent},
       {path: "admin-creation", component:AjoutAdministrateurFormComponent},
       {path: "administrateurs", component:AdministrateursListComponent}
   ]},
