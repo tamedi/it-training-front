@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSelectChange } from '@angular/material/select';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Formation } from 'src/app/models/formation';
 import { Session } from 'src/app/models/Session';
 import { SessionNew } from 'src/app/models/SessionNew';
@@ -21,12 +22,15 @@ export class AjoutSessionFormComponent implements OnInit {
   formationsList: Formation[];
   formationSelected:Formation;
   session: Session;
+  adminID: number;
 
   constructor(
     private fb: FormBuilder,
     private sessionService: SessionHttpService,
     private formationService: FormationHttpService,
-    public dialog: MatDialog) {
+    public dialog: MatDialog,
+    private activeRoute: ActivatedRoute,
+    private route: Router) {
       this.creationSeesionForm = this.fb.group({
         dateDebut: ['', Validators.required],
         dateFin: ['', Validators.required],
@@ -39,6 +43,11 @@ export class AjoutSessionFormComponent implements OnInit {
     this.formationService.getFormationList().subscribe(res => {
       this.formationsList = res;
     });
+
+    this.activeRoute.parent?.params.subscribe( params => {
+      this.adminID = params['id'];
+    });
+    
   }
 
   updateValueFormation(event: MatSelectChange) {
@@ -59,7 +68,9 @@ export class AjoutSessionFormComponent implements OnInit {
       this.session = res;
       if (this.session !== null) {
         const dialogConfirm = this.dialog.open(DialogConfirmationAjoutComponent);
+        this.route.navigate([`/dashboard/${this.adminID}/listeSessions`]);
         dialogConfirm.afterClosed().subscribe();
+        
       }
     });
     this.creationSeesionForm.reset();   

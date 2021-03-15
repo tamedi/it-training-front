@@ -1,6 +1,6 @@
 .body-footer {
     width: 100%;
-    background-color: #363C40;
+    background-color: #008E97;
     position: relative;
     bottom: 0;
     justify-content: space-between;
@@ -25,14 +25,16 @@
     text-decoration: underline;
 }
 
-.body-footer .part ul li {
+.body-footer .part ul li,.part p {
     list-style: none;
     font-size: 15px;
+    color: #fff;
+    
 }
 
 .body-footer .part ul li a{
     text-decoration: none;
-    color: #5DA0A2;
+    color: rgb(204, 204, 204);
     font-size: 15px;
 }
 

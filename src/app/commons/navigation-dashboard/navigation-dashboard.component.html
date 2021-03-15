@@ -1,14 +1,17 @@
 <div id="sidenav">
+<<<<<<< HEAD
+=======
   <div class="group-navigation">
     <span class="material-icons"> source </span>
     <button mat-button [matMenuTriggerFor]="themes" class="menu-item"> Thèmes</button>
     <mat-menu #themes="matMenu">
       <button mat-menu-item>Liste des thèmes</button>
-      <button mat-menu-item [routerLink]="'ajoutFormation'">Ajouter Thème</button>
-      <button mat-menu-item [routerLink]="'modifierFormation'">Modifier Thème</button>
+      <button mat-menu-item>Ajouter Thème</button>
+      <button mat-menu-item>Modifier Thème</button>
       <button mat-menu-item>Supprimer Thème</button>
     </mat-menu>
   </div>
+>>>>>>> c36fac7cff96873751be2699bc8a31000d6ad964
 
   <div class="group-navigation">
     <span class="material-icons"> school </span>
@@ -16,8 +19,11 @@
     <mat-menu #formations="matMenu">
       <button mat-menu-item [routerLink]="'formations'">Liste des formations</button>
       <button mat-menu-item [routerLink]="'ajoutFormation'">Ajouter Formation</button>
-      <button mat-menu-item [routerLink]="'modifierFormation'">Modifier Formation</button>
+<<<<<<< HEAD
+=======
+      <button mat-menu-item>Modifier Formation</button>
       <button mat-menu-item>Supprimer Formation</button>
+>>>>>>> c36fac7cff96873751be2699bc8a31000d6ad964
     </mat-menu>
   </div>
 
@@ -27,8 +33,6 @@
     <mat-menu #sessions="matMenu">
       <button mat-menu-item [routerLink]="'listeSessions'">Liste des sessions</button>
       <button mat-menu-item [routerLink]="'ajoutSession'">Ajouter Session</button>
-      <button mat-menu-item>Modifier Session</button>
-      <button mat-menu-item>Supprimer Session</button>
     </mat-menu>
   </div>
 
@@ -38,8 +42,6 @@
     <mat-menu #administrateurs="matMenu">
       <button mat-menu-item [routerLink]="'administrateurs'">Liste des administrateurs</button>
       <button mat-menu-item [routerLink]="'admin-creation'">Ajouter Administrateur</button>
-      <button mat-menu-item>Modifier Administrateur</button>
-      <button mat-menu-item>Supprimer Administrateur</button>
     </mat-menu>
   </div>
 </div>

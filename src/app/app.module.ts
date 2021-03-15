@@ -64,6 +64,7 @@ import { DialogConfirmationAjoutComponent } from './features/dialog-confirmation
 import { DashboardHomeComponent } from './features/dashboard-home/dashboard-home.component';
 import { HeaderDashboardComponent } from './commons/header-dashboard/header-dashboard.component';
 import { AdministrateurProfilComponent } from './features/administrateur-profil/administrateur-profil.component';
+import { AccueilComponent } from './pages/accueil/accueil.component';
 
 
 @NgModule({
@@ -111,7 +112,8 @@ import { AdministrateurProfilComponent } from './features/administrateur-profil/
     DialogConfirmationAjoutComponent,
     DashboardHomeComponent,
     HeaderDashboardComponent,
-    AdministrateurProfilComponent
+    AdministrateurProfilComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,

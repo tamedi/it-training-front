@@ -11,7 +11,13 @@
 
 .creation-session-form form {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    padding: 10px;
+    margin:auto;
+    margin-top: 8vh;
+    border-style: groove;
+    border-width: 2px;
+    background-color: #396364; 
 }
 
 .creation-session-form button {

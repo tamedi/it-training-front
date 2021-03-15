@@ -15,7 +15,6 @@ export class FormationHttpService {
     return this.httpClient.get<Formation[]>(this.baseUrl)
   }
   findById(id:number){
-
     return this.httpClient.get<Formation>(`http://localhost:9191/formations/${id}`)
   }
    save(formation:FormationNew){
@@ -23,7 +22,6 @@ export class FormationHttpService {
   }
 
   deleteById(id:number){
-    console.log("suppression");
     return this.httpClient.delete(`http://localhost:9191/formations/${id}`);
   }
 
