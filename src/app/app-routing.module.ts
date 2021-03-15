@@ -22,6 +22,7 @@ import { PageFormulaireInscriptionApprenantComponent } from './pages/page-formul
 import { NosCentresComponent } from './pages/nos-centres/nos-centres.component';
 import { PageFormationComponent } from './pages/page-formation/page-formation.component';
 import { BouttonComponent } from './features/tests/boutton/boutton.component';
+import { FormationsListComponent } from './features/formations-list/formations-list.component';
 
 
 
@@ -44,6 +45,7 @@ const routes: Routes = [
       {path: "home", component:DashboardHomeComponent},
       {path: "ajoutSession", component:AjoutSessionFormComponent}, 
       {path: "listeSessions", component:ListSessionsDashboardComponent},
+      {path: "formations", component:FormationsListComponent},
       {path: "ajoutFormation",component:AjoutFormationFormComponent},
       {path: "admin-creation", component:AjoutAdministrateurFormComponent},
       {path: "administrateurs", component:AdministrateursListComponent}

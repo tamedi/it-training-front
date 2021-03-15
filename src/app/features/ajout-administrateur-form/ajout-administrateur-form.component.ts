@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Administrateur } from 'src/app/models/Administrateur';
 import { AdministrateurNew } from 'src/app/models/AdministrateurNew';
 import { AdministrateurService } from 'src/app/services/administrateur.service';
@@ -17,11 +17,14 @@ export class AjoutAdministrateurFormComponent implements OnInit {
   creationAdminForm: FormGroup;
   administrateurNew: AdministrateurNew;
   administrateur:Administrateur;
+  adminID: number;
 
   constructor(
     private fb: FormBuilder,
     private administrateurService: AdministrateurService,
-    public dialog: MatDialog) {
+    public dialog: MatDialog,
+    private activeRoute: ActivatedRoute,
+    private route: Router) {
     this.creationAdminForm = this.fb.group({
       nom: [''],
       prenom: [''],
@@ -32,6 +35,9 @@ export class AjoutAdministrateurFormComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.activeRoute.parent?.params.subscribe( params => {
+      this.adminID = params['id'];
+    });
   }
 
 
@@ -50,6 +56,7 @@ export class AjoutAdministrateurFormComponent implements OnInit {
 
           if(this.administrateur != null) {
             const dialogConfirm = this.dialog.open(DialogConfirmationAjoutComponent);
+            this.route.navigate([`/dashboard/${this.adminID}/administrateurs`]);
             dialogConfirm.afterClosed().subscribe();
           }
       });
