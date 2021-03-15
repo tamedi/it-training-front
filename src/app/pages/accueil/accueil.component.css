@@ -2,14 +2,80 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    width: 100%;
 }
 
-.acceuil img {
-    max-width: 300px;
+.home-image {
+    width: 100%;
+    background: url("../../../assets/formation-images/home.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.acceuil h1,h2 {
-    font-weight: lighter;
-    color: rgb(41, 80, 67);
+.acceuil h2 {
+    margin-top: 25px;
+    font-size: 22px;
 }
+
+.home-image h2{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.acceuil .home-presentation,
+.acceuil .home-contact {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.acceuil .home-presentation {
+    display: flex;
+}
+
+.acceuil .home-presentation .home-card {
+    width: 30%;
+    margin: 0 20px;
+}
+
+.acceuil .home-presentation .home-card h3 {
+    text-align: center;
+    color: #008E97;
+    font-weight: 500;
+}
+
+.acceuil .home-contact h2{
+    margin-top: 25px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.acceuil .home-contact .block-contact{
+    width: 40%;
+    margin: auto;
+}
+
+.acceuil .home-contact .button-contact {
+    width: 150px;
+    margin: 20px auto;
+
+}
+
+.acceuil .home-contact .button-contact a {
+    cursor: pointer;
+}
+
+.acceuil .home-contact .button-contact button {
+    border: 2px solid #008E97;
+    color: #008E97;
+    font-size: 15px;
+    border-radius: 5%;
+    text-align: center;
+    padding: 5px;
+} 

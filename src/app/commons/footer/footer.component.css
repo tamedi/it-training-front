@@ -15,18 +15,17 @@
 
 .body-footer .part {
     width: 25%;
-    font-weight: 500;
 }
 
 .body-footer .part h3 {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     text-decoration: underline;
 }
 
 .body-footer .part ul li,.part p {
     list-style: none;
-    font-size: 15px;
+    font-size: 12px;
     color: #fff;
     
 }

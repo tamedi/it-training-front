@@ -1,6 +1,5 @@
 .formation-liste{
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
-    margin: auto;
+    width: 100%;
 }
